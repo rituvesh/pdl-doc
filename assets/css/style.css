@@ -276,11 +276,8 @@ p.description-image {
 }
 
 .zig-zag {
-    margin-bottom: 100px
-}
-
-.zig-zag h2 {
-    margin-top: 70px
+    margin-bottom: 70px;
+    vertical-align: top;
 }
 
 .zig-zag-right p {
