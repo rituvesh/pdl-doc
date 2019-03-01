@@ -146,7 +146,7 @@ a.more i.fa:hover {
 
 .navbar-fixed-top {
     background-color: transparent;
-    border: 0
+    border: 0;
 }
 
 .navbar-fixed-top li a {
@@ -243,9 +243,38 @@ a.more i.fa:hover {
     color: #fff
 }
 
+#sub-menu {
+    background: url("../images/submenu-bg.jpg");
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 250px;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+#sub-menu h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 40px;
+
+}
+
+#sub-menu li, #sub-menu a {
+    color: #c1eeff;
+}
+
+#sub-menu a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .title {
     text-align: center;
-    margin-bottom: 70px
+    margin-bottom: 50px
 }
 
 .title p {
@@ -257,12 +286,37 @@ a.more i.fa:hover {
     margin-bottom: 15px !important
 }
 
+.subtitle {
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.subtitle p {
+    font-size: 14px;
+    color: #323333;
+}
+
+.subtitle h2 {
+    margin-bottom: 15px !important
+}
+
+.box {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #dedfdf;
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    vertical-align: center;
+}
+
 p.description {
     font-size: 14px;
     font-weight: 400;
     text-align: center !important;
     padding-bottom: 5px;
-    max-width: 450px;
+    max-width: 650px;
     margin: 0 auto
 }
 
@@ -539,7 +593,8 @@ span.dollar {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden
+    overflow: hidden;
+    margin-top: 50px;
 }
 
 .marketing-action .overlay {
