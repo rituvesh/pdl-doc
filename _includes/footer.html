@@ -1,0 +1,52 @@
+<section id="contact" class="marketing-action">
+    <div class="overlay">
+        <div class="text">
+            <h2 class="white flex fadeInUp animated">Vi hører gjerne fra deg!</h2>
+            <p class="description-image flex fadeInUp animated">
+                Våre datamanagere og ingeniører står klare til å hjelpe deg med alle spørsmål og innspill du måtte ha til løsningen. Du er velkommen til å kontakte oss på Slack, e-post og telefon. Vi har vakt 24 timer i døgnet.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-section col-md-1">
+                <a href="#" title="NAV" rel="home"><img src='assets/images/nav-logo-hvit.png' class="logo-footer flex fadeInUp animated" alt="Home is where the heart is"></a>
+            </div>
+
+            <div class="footer-section col-md-8 col-sm-9 col-xs-12">
+                <p class="copyright flex fadeInUp animated">Lisensiert som åpen kildekode og finansiert av alle landets skattebetalere - <strong>NAV IT.</strong> 2019.</p>
+            </div>
+
+
+            <div class="footer-section col-md-3 col-xs-12">
+                <div class="social copyright flex fadeInUp animated">
+                    <a href="#" target="_blank" title="Confluence"><i class="fab fa-confluence"></i></a>
+                    <a href="#" target="_blank" title="Slack"><i class="fab fa-slack"></i></a>
+                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=1.0'></script>
+<script type='text/javascript' src='{{ "assets/js/bootstrap.min.js" | relative_url }}'></script>
+<script type='text/javascript' src='{{ "assets/js/jquery-mobile.js?ver=1.0" | relative_url }}'></script>
+<script type='text/javascript' src='{{ "assets/js/wow.min.js" | relative_url }}'></script>
+<script>
+    //jQuery transitions init(wow + animated)
+    wow = new WOW(
+        {
+            boxClass: 'flex',
+            animateClass: 'animated', // default
+            offset: 0,          // default
+            mobile: true,       // default
+            live: true        // default
+        }
+    );
+    wow.init();
+</script>
