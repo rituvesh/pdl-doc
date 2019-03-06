@@ -3,43 +3,33 @@ layout: opplysningstyper
 ---
 
 <section id="opplysningstyper" class="container">
-    {% for opplysningstype in site.opplysningstyper %}
+    {% for opplysningstype in site.opplysningstyper-alt %}
 
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-8">
                 <div class="subtitle">
                     <h2>{{ opplysningstype.navn }}</h2>
-                    <div class="box">
-                        <p>{{ opplysningstype.beskrivelse }}</p>
-                    </div>
                 </div>
-                <h4 class="h4">Volum</h4>
-                <p>{{ opplysningstype.volum }}</p>
 
-                <h4 class="h4">Konsekvens for rettigheter, plikter og medlemskap</h4>
-                <p>{{ opplysningstype.konsekvenser }}</p>
+                {{ opplysningstype.content }}
 
-                <h4 class="h4">Til hvilke formål kan man benytte denne opplysningstypen?</h4>
-                <p>{{ opplysningstype.formal }}</p>
-
-                <h4 class="h4"><a data-toggle="collapse" href="#juridisk-{{ opplysningstype.kortnavn }}" role="button" aria-expanded="false" aria-controls="juridisk-{{ opplysningstype.kortnavn }}">Juridiske opplysninger <i class="fas fa-angle-down"></i></a></h4>
-                <div class="collapse" id="juridisk-{{ opplysningstype.kortnavn }}">
-                    <div class="card card-body">
-                        <p>{{ opplysningstype.juridisk }}</p>
-                    </div>
-                </div>
             </div>
 
-            <div class="col-md-2">
-                <p>
-                    {%- if opplysningstype.hendelser == 'ja' -%} <p><a href="#" class="btn-success btn"><i class="fa fa-envelope"></i> Hendelser</a></p> {%- endif -%}
-                    {%- if opplysningstype.oppslag == 'ja' -%} <a href="#" class="btn-success btn"><i class="fa fa-sync-alt"></i> Oppslag</a> {%- endif -%}
-                    {%- if opplysningstype.sok == 'ja' -%} <a href="#" class="btn-success btn"><i class="fa fa-search"></i> Søkeparameter</a> {%- endif -%}
-                    {%- if opplysningstype.produsent-nav == 'ja' -%} <a href="#" class="btn-success btn"><i class="fas fa-user-edit"></i> Produsent i NAV</a> {%- endif -%}
-                    {%- if opplysningstype.produsent-freg == 'ja' -%} <a href="#" class="btn-success btn"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a> {%- endif -%}
+            <div class="col-md-4">
+                <div class="box">
+                    <ul class="list-group">
+                    {%- if opplysningstype.hendelser == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fa fa-envelope"></i> Tilbys som hendelser</a></li> {%- endif -%}
+                    {%- if opplysningstype.oppslag == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fa fa-sync-alt"></i> Tilbys via oppslagstjeneste</a></li> {%- endif -%}
+                    {%- if opplysningstype.sok == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fa fa-search"></i> Kan benyttes som søkeparameter</a></li> {%- endif -%}
+                    {%- if opplysningstype.produsent-nav == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fas fa-user-edit"></i> Produsent i NAV</a></li> {%- endif -%}
+                    {%- if opplysningstype.produsent-freg == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a></li> {%- endif -%}
+                    </ul>
+                    <h5>Andre opplysninger</h5>
+                    <p>Det er lurt å skrive opplysninger her.</p>
                 </div>
             </div>
         </div>
+    </div>
 
     {% endfor %}
 
