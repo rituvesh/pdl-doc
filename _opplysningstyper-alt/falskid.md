@@ -3,13 +3,17 @@ navn: Falsk ID
 kortnavn: falskid
 hendelser: ja
 oppslag: ja
-sok: nei
-produsent-freg: nei
+sok: ja
+produsent-freg: ja
 produsent-nav: nei
 ---
 #### Beskrivelse
 
 Når det foreligger gyldig vedtak/dom om at en identifikator er bygd på uriktige opplysninger og identifikatoren skal opphøres fra folkeregisteret.
+
+#### Forsøk på tittel
+
+Tekst om det!
 
 #### Konsekvenser
 
