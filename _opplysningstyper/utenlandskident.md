@@ -1,5 +1,5 @@
 ---
-navn: Falsk ID
+navn: Utenlandsk ident
 hendelser: ja
 oppslag: ja
 sok: ja

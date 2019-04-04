@@ -1,5 +1,5 @@
 ---
-navn: Falsk ID
+navn: Opplysninger om dødsbo
 hendelser: ja
 oppslag: ja
 sok: ja

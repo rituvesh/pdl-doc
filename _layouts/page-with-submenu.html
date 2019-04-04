@@ -30,12 +30,12 @@
 
                         <div class="menu-primary-menu-container">
                             <ul id="menu-main-top-navigation" class="menu nav navbar-nav navbar-right">
-                                <li><a href="#home">Introduksjon</a></li>
-                                <li><a href="#opplysningstyper">Opplysningstyper</a></li>
-                                <li><a href="#integrasjon">APIer og hendelser</a></li>
-                                <li><a href="#plan">Produktkø</a></li>
-                                <li><a href="#jira">Rapporter feil</a></li>
-                                <li><a href="#contact">Kontakt oss</a></li>
+                                <li><a href="index.html">Introduksjon</a></li>
+                                <li><a href="opplysningstyper.html">Opplysningstyper</a></li>
+                                <li><a href="integrasjon.html">APIer og hendelser</a></li>
+                                <li><a href="tema.html">Tema</a></li>
+                                <li><a href="feilmeldinger.html">Feilmeldinger</a></li>
+                                <li><a href="kontaktoss.html">Kontakt oss</a></li>
                             </ul>
                         </div>
                     </div>
@@ -45,37 +45,7 @@
     </div>
 </header>
 
-<section id="sub-menu">
-    <div class="row container">
-        <div class="col-md-3">
-            <h2>Opplysningstyper</h2>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li><a href="#">Falsk ID</a></li>
-                <li><a href="#">Utenlandsk ID</a></li>
-                <li><a href="#">Folkeregisterident</a></li>
-                <li><a href="#">Opplysninger om dødsbo</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li><a href="#">Navn</a></li>
-                <li><a href="#">Sivilstand</a></li>
-                <li><a href="#">Relasjoner</a></li>
-                <li><a href="#">Legitimasjonskontroll</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <ul>
-                <li><a href="#">Bostedsadresse</a></li>
-                <li><a href="#">Oppholdsadresse</a></li>
-                <li><a href="#">Postadresse</a></li>
-                <li><a href="#">Digital kontaktinformasjon</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+{%- include {{ page.submenu }} -%}
 
 {{ content }}
 

@@ -5,4 +5,4 @@ description: >-
 markdown: kramdown
 collections:
   - opplysningstyper
-  - opplysningstyper-alt
+exclude: [.idea]

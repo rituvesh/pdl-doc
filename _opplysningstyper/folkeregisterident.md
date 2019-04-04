@@ -1,9 +1,9 @@
 ---
-navn: Falsk ID
+navn: Folkeregisterident
 hendelser: ja
 oppslag: ja
 sok: ja
-produsent-freg: nei
+produsent-freg: ja
 produsent-nav: nei
 ---
 
