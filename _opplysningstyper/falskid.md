@@ -13,7 +13,10 @@ Identitet som tilhører en annen enn den som benytter den, eller ikke tilhører 
 
 #### Spesiell informasjon
 
-Når det foreligger gyldig vedtak/dom om at en identifikator er bygd på uriktige opplysninger og identifikatoren skal opphøres fra folkeregisteret.
+Når det foreligger gyldig vedtak/dom om at en identifikator er bygd på uriktige opplysninger og identifikatoren skal opphøres fra 
+folkeregisteret.
+
+Identifikatorer som er merket med Falsk ID vil automatisk også ha personstatus opphørt.
 
 #### Master og kilder
 
