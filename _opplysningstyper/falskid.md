@@ -9,16 +9,18 @@ produsent-nav: nei
 
 #### Beskrivelse
 
-Tekst
+Identitet som tilhører en annen enn den som benytter den, eller ikke tilhører noen i det hele tatt, men presenteres som om den er reell.
 
 #### Spesiell informasjon
 
-Tekst
+Når det foreligger gyldig vedtak/dom om at en identifikator er bygd på uriktige opplysninger og identifikatoren skal opphøres fra folkeregisteret.
 
 #### Master og kilder
 
-Tekst, eventuelt også med kildeavhengige verdier
+FREG er master.
+Kilden til FREG er kilden.
+Mulige kildeverdier: skatteetaten, UDI, påtalemyndigheten i politiet, NAV.
 
 #### Historikk
 
-Tekst
+Nei, anses som en sluttstatus.
