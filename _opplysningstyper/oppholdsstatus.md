@@ -1,5 +1,5 @@
 ---
-navn: oppholdsstatus
+navn: oppholdsstatus - under avklaring
 hendelser: ja
 oppslag: ja
 sok: ja
