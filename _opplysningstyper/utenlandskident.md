@@ -1,5 +1,5 @@
 ---
-navn: Utenlandsk ident
+navn: Utenlandsk ID
 hendelser: ja
 oppslag: ja
 sok: ja
@@ -9,16 +9,22 @@ produsent-nav: nei
 
 #### Beskrivelse
 
-Tekst
+Identifikator utstedt av myndigheter i et annet land.
 
 #### Spesiell informasjon
 
-Tekst
+Med utenlandsk ID mener vi personidentifikasjonsnummer.
+Saksnummer eller identifikasjonsdokumentnummer (passnummer) anses ikke som en utenlandsk ID.
+
+Brukes for samhandling med utenlandske trygdemyndigheter, verifisering og identifisering.
 
 #### Master og kilder
 
-Tekst, eventuelt også med kildeavhengige verdier
+NAV og FREG som master
+    
+Dersom NAV er master er utenlandske trygdemyndigheter kilde
+Dersom FREG er master er kilden til FREG kilden (f.eks. skatteetaten, UDI)
 
 #### Historikk
 
-Tekst
+Ja
