@@ -27,3 +27,14 @@ Mulige kildeverdier: skatteetaten, UDI, påtalemyndigheten i politiet, NAV.
 #### Historikk
 
 Nei, anses som en sluttstatus.
+
+
+| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
+|--|--|--|--|--|
+| Rett identitet ved opplysninger | navn, fødselsdato og statsborgerskap | | Valgfri |  |
+| Rett identitet ved identifikasjonsnummer | f.nr. eller d.nr. | | Valgfri |  |
+| Rett identitet er ukjent | | | Obligatorisk dersom ikke de to andre er utfylt | |
+| Registreringstidspunkt PDL | | | Obligatorisk | |
+| Ajourholdstidspunkt FREG | | | |
+
+
