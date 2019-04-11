@@ -26,3 +26,10 @@ Mulige kilder: tingretten, pårørende ved endringer av informasjon
 #### Historikk
 
 Vises gjeldene verdi, funksjonell historikk ved behov.
+
+
+| Informasjonselement | Beskrivelse | Kodeverdier| Kompletthet | Kvalitet |
+|--|--|--|--|--|
+| Adressat for dødsbo med adresse | Adressat kan være person, organisasjon eller advokat. Person og advokat angis med navn, organisasjon med organisasjonsnavn. For advokat er organisasjonsnavn og -nummer ikke obligatorisk. For organisasjon er organisasjonsnummer  og kontaktperson ikke obligatorisk | n/a | Obligatorisk | God kvalitet, opplysningene er overført fra Tingretten som utsteder skifteattesten. |
+| Skifteform | Fra Tingretten angis skifteformen for booppgjøret. | offentlig, annet | Obligatorisk | God |
+| Attestutstedelsesdato | Attestutstedelsesdato for skifteattest | dato | Obligatorisk | God |
