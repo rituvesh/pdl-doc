@@ -1,5 +1,5 @@
 ---
-navn: Sivilstand
+navn: Sivilstand - under avklaring
 hendelser: ja
 oppslag: ja
 sok: ja
