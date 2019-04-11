@@ -1,5 +1,5 @@
 ---
-navn: sikkerhetstiltak - under avklaring
+navn: Sikkerhetstiltak - under avklaring
 hendelser: ja
 oppslag: ja
 sok: ja
