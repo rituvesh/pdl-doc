@@ -1,5 +1,5 @@
 ---
-navn: språk (målform)
+navn: Språk (målform) - under analyse
 hendelser: ja
 oppslag: ja
 sok: ja
