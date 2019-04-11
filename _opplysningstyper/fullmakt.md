@@ -1,5 +1,5 @@
 ---
-navn: fullmakt
+navn: fullmakt - under avklaring
 hendelser: ja
 oppslag: ja
 sok: ja
