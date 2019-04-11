@@ -29,7 +29,7 @@ Ja
 | Fornavn | Fornavn på person | | Obligatorisk | |
 | Mellomnavn | Mellomnavn på person | | Valgfri | |
 | Etternavn | Etternavn på person | | Obligatorisk | |
-| Forkortet navn | Personnavn som benyttes ved maskinelle utskrifter (opptil 40 tegn) | Valgfri | |
+| Forkortet navn | Personnavn som benyttes ved maskinelle utskrifter (opptil 40 tegn) | | Valgfri | |
 | Originalt navn | Personen navn i opprinnelig tegn før translitterering | | Valgfri | |
 
 
