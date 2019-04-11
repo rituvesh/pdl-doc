@@ -21,8 +21,6 @@ Identifikatorer som er merket med Falsk ID vil automatisk også ha personstatus 
 #### Master og kilder
 
 FREG er master.
-Kilden til FREG er kilden.
-Mulige kildeverdier: skatteetaten, UDI, påtalemyndigheten i politiet, NAV.
 
 #### Historikk
 
@@ -34,6 +32,7 @@ Nei, anses som en sluttstatus.
 | Rett identitet ved opplysninger | navn, fødselsdato og statsborgerskap | | Valgfri |  |
 | Rett identitet ved identifikasjonsnummer | f.nr. eller d.nr. | | Valgfri |  |
 | Rett identitet er ukjent | | | Obligatorisk dersom ikke de to andre er utfylt | |
+| Kilde til FREG | Mulige kilder skatteetaten, UDI, påtalemyndigheten i politiet, NAV | | 
 | Registreringstidspunkt PDL | | | Obligatorisk | |
 | Ajourholdstidspunkt FREG | | | |
 
