@@ -1,5 +1,5 @@
 ---
-navn: Foreldreansvar
+navn: Foreldreansvar - under analyse
 hendelser: ja
 oppslag: ja
 sok: ja
