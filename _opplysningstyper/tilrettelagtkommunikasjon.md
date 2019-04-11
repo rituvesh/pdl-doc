@@ -1,5 +1,5 @@
 ---
-navn: tilrettelagt kommunikasjon - under avklaring
+navn: Tilrettelagt kommunikasjon - under avklaring
 hendelser: ja
 oppslag: ja
 sok: ja
