@@ -1,5 +1,5 @@
 ---
-navn: telefonnummer - under avklaring om det skal lagres i tillegg til KRR
+navn: Telefonnummer - under avklaring om det skal lagres i tillegg til KRR
 hendelser: ja
 oppslag: ja
 sok: ja
