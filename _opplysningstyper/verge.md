@@ -1,5 +1,5 @@
 ---
-navn: verge
+navn: Verge - under avklaring
 hendelser: ja
 oppslag: ja
 sok: ja
