@@ -1,5 +1,5 @@
 ---
-navn: kjønn
+navn: Kjønn
 hendelser: ja
 oppslag: ja
 sok: ja
@@ -24,4 +24,10 @@ PDL kan være master for personkrets D.nr. og utvandret dersom personen har 3. k
 #### Historikk
 
 Vises gjeldene verdi, funksjonell historikk ved behov.
+
+
+| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
+|--|--|--|--|--|
+| Kjønn | Gyldige verdier: mann, kvinne (3. kjønn når PDL er master) | | Obligatorisk | |
+
 
