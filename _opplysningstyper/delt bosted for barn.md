@@ -1,5 +1,5 @@
 ---
-navn: delt bosted for barn
+navn: Delt bosted for barn
 hendelser: ja
 oppslag: ja
 sok: ja
@@ -26,3 +26,9 @@ Kilder til FREG: foreldrene
 Ja, ved behov
 
 
+| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
+|--|--|--|--|--|
+| Startdato for kontrakt | Avtalen mellom foreldrene har en startdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter || Obligatorisk | Ikke analysert enda |
+| Sluttdato for kontrakt | | | Valgfri | |
+| Master | FREG | | | |
+| FREGs kilde | Barnets foreldre | | | |
