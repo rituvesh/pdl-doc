@@ -1,5 +1,5 @@
 ---
-navn: tvungen forvaltning - under avklaring om det er behov for lagring i PDL
+navn: Tvungen forvaltning - under avklaring om det er behov for lagring i PDL
 hendelser: ja
 oppslag: ja
 sok: ja
