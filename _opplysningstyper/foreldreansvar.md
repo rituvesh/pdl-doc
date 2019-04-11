@@ -1,5 +1,5 @@
 ---
-navn: foreldreansvar
+navn: Foreldreansvar
 hendelser: ja
 oppslag: ja
 sok: ja
@@ -27,5 +27,17 @@ FREG er master
 #### Historikk
 
 Ja
+
+
+
+
+| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
+|--|--|--|--|--|
+| Ansvarlig eller ansvarlig organisasjon | f.nr., org.nr. (se spesiell info), ansvarlig uten identifikator | | Obligatorisk | |
+| Ansvarstype | mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet | | | |
+| Ansvarssubjekt | f.nr. for personen som har ansvarlige, ansvarssubjekt uten identifikator | | | |
+| FREGs kilde | må analyseres | | | | 
+| Registreringstidspunkt FREG | | | |
+
 
 
