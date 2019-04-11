@@ -1,5 +1,5 @@
 ---
-navn: innflytting
+navn: Innflytting - under analyse
 hendelser: ja
 oppslag: ja
 sok: ja
