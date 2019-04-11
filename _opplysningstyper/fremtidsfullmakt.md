@@ -1,5 +1,5 @@
 ---
-navn: fremtidsfullmakt
+navn: Fremtidsfullmakt - under analyse
 hendelser: ja
 oppslag: ja
 sok: ja
