@@ -4,6 +4,19 @@ submenu: integrasjon.html
 ---
 
 <section id="integrasjon" class="container">
+    {% for integrasjon in site.integrasjon %}
 
+    <div class="row">
+        <div class="col-md-8">
+            <div class="subtitle">
+                <h2><a id="{{ integrasjon.navn }}">{{ integrasjon.navn }}</a></h2>
+            </div>
+
+            {{ integrasjon.content }}
+
+        </div>
+    </div>
+
+    {% endfor %}
 
 </section>
