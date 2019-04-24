@@ -1,5 +1,0 @@
----
-navn: Sikkerhet
----
-
-#### Beskrivelse

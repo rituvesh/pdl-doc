@@ -5,5 +5,4 @@ description: >-
 markdown: kramdown
 collections:
   - opplysningstyper
-  - integrasjon
 exclude: [.idea]
