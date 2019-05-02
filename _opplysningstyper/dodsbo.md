@@ -28,10 +28,10 @@ Mulige kilder: tingretten, pårørende ved endringer av informasjon
 Vises gjeldene verdi, funksjonell historikk ved behov.
 
 #### Datakvalitet
-*Utenlandske adresser*
+**Utenlandske adresser**
 Det er tilfeller av kontaktinformasjon for dødsbo med utenlandsk adresse hvor adressefeltene blir vist feil. F.eks. ved at hele adressen kommer på adresselinje 1. 
 
-*Ukjent gateadresse*
+**Ukjent gateadresse**
 «UKJENT GATEADRESSE» står oppført i adresselinje-feltet selv når kontaktperson bor på et sted som ikke har gateadresse. Dette betyr ikke nødvendigvis at den er ukjent, det er mulig at det er ingen gateadresse der vedkommende bor. 
 
 | Informasjonselement | Beskrivelse | Kodeverdier| Kompletthet | Kvalitet |
