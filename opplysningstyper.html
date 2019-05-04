@@ -7,28 +7,19 @@ submenu: opplysningstyper.html
     {% for opplysningstype in site.opplysningstyper %}
 
         <div class="row">
-            <div class="col-md-8">
-                <div class="subtitle">
-                    <h2><a id="{{ opplysningstype.navn }}">{{ opplysningstype.navn }}</a></h2>
-                </div>
+            <div class="col-md-12">
+                <h3><a id="{{ opplysningstype.navn }}">{{ opplysningstype.navn }}</a></h3>
+
+                <ul class="menu-inline">
+                    {%- if opplysningstype.hendelser == 'ja' -%} <li><a href="#"><i class="fa fa-envelope"></i> Hendelser</a></li> {%- endif -%}
+                    {%- if opplysningstype.oppslag == 'ja' -%} <li><a href="#"><i class="fa fa-sync-alt"></i> Oppslag</a></li> {%- endif -%}
+                    {%- if opplysningstype.sok == 'ja' -%} <li><a href="#"><i class="fa fa-search"></i> Søkeparameter</a></li> {%- endif -%}
+                    {%- if opplysningstype.produsent-nav == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i NAV</a></li> {%- endif -%}
+                    {%- if opplysningstype.produsent-freg == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a></li> {%- endif -%}
+                </ul>
 
                 {{ opplysningstype.content }}
 
-            </div>
-
-            <div class="col-md-4">
-                <div class="box">
-                    <ul class="list-group">
-                    {%- if opplysningstype.hendelser == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fa fa-envelope"></i> Tilbys som hendelser</a></li> {%- endif -%}
-                    {%- if opplysningstype.oppslag == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fa fa-sync-alt"></i> Tilbys via oppslagstjeneste</a></li> {%- endif -%}
-                    {%- if opplysningstype.sok == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fa fa-search"></i> Kan benyttes som søkeparameter</a></li> {%- endif -%}
-                    {%- if opplysningstype.produsent-nav == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fas fa-user-edit"></i> Produsent i NAV</a></li> {%- endif -%}
-                    {%- if opplysningstype.produsent-freg == 'ja' -%} <li class="list-group-item"><a href="#"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a></li> {%- endif -%}
-                    </ul>
-
-                    <h5>Grensesnitt</h5>
-                    <p>Dokumentasjon og skjemaer for søk, oppslag, produsent og hendelser.</p>
-                </div>
             </div>
         </div>
 

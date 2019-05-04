@@ -304,10 +304,14 @@ a.more i.fa:hover {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #dedfdf;
+    background: #ebebeb;
     width: 100%;
     border-radius: 10px;
     vertical-align: center;
+}
+
+h3.box {
+    color: #333333;
 }
 
 p.description {
@@ -671,4 +675,26 @@ p.copyright {
 
 .white {
     color: #ffffff;
+}
+
+ul.menu-inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.menu-inline li {
+    float: left;
+}
+
+ul.menu-inline li a {
+    display: block;
+    text-align: center;
+    padding: 10px 25px 10px 0px;
+    text-decoration: none;
+}
+
+table {
+    @extend .table;
 }
