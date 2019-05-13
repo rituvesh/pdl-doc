@@ -15,13 +15,13 @@ adresse til kontaktpersonen.
 
 #### Spesiell informasjon
 
-Kontaktinformasjon dødsbo foreligger når skifteattesten er utstedt fra Tingretten. Nav kan bruke informasjonen for kontakt med dødsboet, 
+Kontaktinformasjon dødsbo foreligger når skifteattesten er utstedt fra Tingretten. NAV kan bruke informasjonen for kontakt med dødsboet, 
 og den kan da erstatte c/o adresser o.a. som må brukes når det ikke er noen kontaktinformasjon tilgjengelig.
 
 #### Master og kilder
 
-FREG er master
-Mulige kilder: tingretten, pårørende ved endringer av informasjon
+Opplysningen kommer kun fra Folkeregisteret og kan ikke ajourholdes av NAV.
+Folkeregisterets kilder vil kunne være: tingretten, og pårørende ved endringer av informasjon.
 
 #### Historikk
 
