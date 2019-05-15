@@ -251,7 +251,7 @@ a.more i.fa:hover {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    height: 250px;
+    height: 500px;
     padding-top: 100px;
     margin-bottom: 30px;
 }
@@ -259,8 +259,7 @@ a.more i.fa:hover {
 #sub-menu h2 {
     color: #ffffff;
     font-size: 30px;
-    margin-top: 40px;
-
+    margin-top: 150px;
 }
 
 #sub-menu li, #sub-menu a {
@@ -270,6 +269,14 @@ a.more i.fa:hover {
 #sub-menu a:hover {
     color: #ffffff;
     text-decoration: underline;
+}
+
+#sub-menu h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
 }
 
 .title {
