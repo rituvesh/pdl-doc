@@ -61,11 +61,11 @@ Ja, ved behov
       <td></td>
     </tr>
     <tr>
-      <td>FREGs kilde</td>
+      <th scope="row">FREGs kilde</th>
       <td>Barnets foreldre</td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
    </tbody>
-
+</table>
