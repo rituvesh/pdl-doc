@@ -36,8 +36,37 @@ Det er tilfeller av kontaktinformasjon for dødsbo med utenlandsk adresse hvor a
 
 «UKJENT GATEADRESSE» står oppført i adresselinje-feltet selv når kontaktperson bor på et sted som ikke har gateadresse. Dette betyr ikke nødvendigvis at den er ukjent, det er mulig at det er ingen gateadresse der vedkommende bor. 
 
-| Informasjonselement | Beskrivelse | Kodeverdier| Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Adressat for dødsbo med adresse | Adressat kan være person, organisasjon eller advokat. Person og advokat angis med navn, organisasjon med organisasjonsnavn. For advokat er organisasjonsnavn og -nummer ikke obligatorisk. For organisasjon er organisasjonsnummer  og kontaktperson ikke obligatorisk | n/a | Obligatorisk | God kvalitet, opplysningene er overført fra Tingretten som utsteder skifteattesten. |
-| Skifteform | Fra Tingretten angis skifteformen for booppgjøret. | offentlig, annet | Obligatorisk | God |
-| Attestutstedelsesdato | Attestutstedelsesdato for skifteattest | dato | Obligatorisk | God |
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Kodeverdier</th>
+      <th>Kompletthet</th>
+      <th>Kvalitet</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th scope="row">Adressat for dødsbo med adresse</th>
+      <td>Adressat kan være person, organisasjon eller advokat. Person og advokat angis med navn, organisasjon med organisasjonsnavn. For advokat er organisasjonsnavn og -nummer ikke obligatorisk. For organisasjon er organisasjonsnummer  og kontaktperson ikke obligatorisk</td>
+      <td>n/a</td>
+      <td>Obligatorisk</td>
+      <td>God kvalitet, opplysningene er overført fra Tingretten som utsteder skifteattesten.</td>
+    </tr>
+    <tr>
+      <th scope="row">Skifteform</th>
+      <td>Fra Tingretten angis skifteformen for booppgjøret.</td>
+      <td>offentlig, annet</td>
+      <td>Obligatorisk</td>
+      <td>God</td>
+  </tr>
+  <tr>
+    <th scope="row">Attestutstedelsesdato</th>
+    <td>Attestutstedelsesdato for skifteattest</td>
+    <td>dato</td>
+    <td>Obligatorisk</td>
+    <td>God</td>
+   </tbody>
+  </table>
