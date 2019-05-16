@@ -25,10 +25,35 @@ Kilder til FREG: foreldrene
 
 Ja, ved behov
 
-
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Startdato for kontrakt | Avtalen mellom foreldrene har en startdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter || Obligatorisk | Ikke analysert enda |
-| Sluttdato for kontrakt | | | Valgfri | |
-| Master | FREG | | | |
-| FREGs kilde | Barnets foreldre | | | |
+Informasjonselementer
+<tbody>
+  <tr>
+    <th scope="row">Startdato for kontrakt</th>
+    <td>Avtalen mellom foreldrene har en startdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter</td>
+    <td></td>
+    <td>Obligatorisk</td>
+    <td>Ikke analystert enda</td>
+  </tr>
+  <tr>
+    <th scope=row>Sluttdato for kontrakt</th>
+    <td></td>
+    <td></td>
+    <td>Valgfri</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">Master</th>
+    <td>FREG</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>FREGs kilde</td>
+    <td>Barnets foreldre</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+ </tbody>
+  Informasjonselement  Beskrivelse  Eksempel  Kompletthet  Kvalitet 
