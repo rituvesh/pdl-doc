@@ -47,7 +47,7 @@ Ja, ved behov
       <td>Ikke analystert enda</td>
     </tr>
     <tr>
-      <th scope=row>Sluttdato for kontrakt</th>
+      <th scope="row">Sluttdato for kontrakt</th>
       <td></td>
       <td></td>
       <td>Valgfri</td>
