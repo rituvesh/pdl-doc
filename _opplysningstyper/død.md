@@ -74,18 +74,5 @@ Vises gjeldene verdi, funksjonell historikk ved behov.
     <td></td>
     <td>Obligatorisk</td>
     <td></td>
-  </tr>
- </tbody>
+  </tbody>
  </table>
-
-
-
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Dødsdato | dato der personen døde | | Ikke obligatorisk, men vil som regel være oppført | God |
-| Registreringsdato FREG | | | Obligatorisk | |
-| Registreringsdato PDL | | | Obligatorisk | |
-| FREGs kilde | | Lege, tingretten | Valgfri | God |
-| NAVs kilde (under avklaring) | dersom PDL er master | Utenlandske myndigheter | | Obligatorisk | |
-
-
