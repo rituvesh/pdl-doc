@@ -26,6 +26,63 @@ FREG er master.
 
 Nei, anses som en sluttstatus.
 
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Kodeverdier</th>
+      <th>Kompletthet</th>
+      <th>Kvalitet</th>
+    </tr>
+  </thead>
+
+<tbody>
+  <tr>
+    <th scope="row">Rett identitet ved opplysninger</th>
+    <td>navn, fødselsdato og statsborgerskap</td>
+    <td></td>
+    <td>Valgfri</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">Rett identitet ved identifikasjonsnummer</th>
+    <td>f.nr. eller d.nr.</td>
+    <td></td>
+    <td>Valgfri</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">Rett identitet er ukjent</th>
+    <td></td>
+    <td></td>
+    <td>Obligatorisk dersom rett identitet ved opplysninger/id-nummer ikke er fylt ut</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">Kilde til FREG</th>
+    <td>mulige verdier: skatteetaten, påtalemyndigheten i politiet, NAV</td>
+    <td></td>
+    <td>Obligatorisk</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th scope="row">Registreringstidspunkt PDL</th>
+    <td></td>
+    <td></td>
+    <td>Obligatorisk</td>
+    <td></td>
+  </tr>
+   <tr>
+    <th scope="row">Ajourholdstidspunkt FREG</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tbody>
+ </table>
+
+
 
 | Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
 |--|--|--|--|--|
