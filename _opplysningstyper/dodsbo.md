@@ -70,4 +70,4 @@ Det er tilfeller av kontaktinformasjon for dødsbo med utenlandsk adresse hvor a
     <td>God</td>
   </tr>
  </tbody>
- </table>
+</table>
