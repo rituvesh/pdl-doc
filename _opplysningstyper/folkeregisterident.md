@@ -5,6 +5,7 @@ oppslag: ja
 sok: ja
 produsent-freg: ja
 produsent-nav: nei
+tilgjengelig-fra: februar 2020
 ---
 
 #### Beskrivelse
