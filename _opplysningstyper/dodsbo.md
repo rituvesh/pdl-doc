@@ -68,5 +68,6 @@ Det er tilfeller av kontaktinformasjon for dødsbo med utenlandsk adresse hvor a
     <td>dato</td>
     <td>Obligatorisk</td>
     <td>God</td>
-   </tbody>
-  </table>
+  </tr>
+ </tbody>
+ </table>
