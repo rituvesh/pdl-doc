@@ -74,5 +74,6 @@ Vises gjeldene verdi, funksjonell historikk ved behov.
     <td>Utenlandsk myndigheter</td>
     <td>Obligatorisk</td>
     <td></td>
-  </tbody>
- </table>
+  </tr>
+ </tbody>
+</table>
