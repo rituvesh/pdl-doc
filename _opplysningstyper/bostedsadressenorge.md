@@ -5,6 +5,7 @@ oppslag: ja
 sok: ja
 produsent-freg: nei
 produsent-nav: nei
+tilgjengelig-fra: 10.12.2019
 ---
 
 #### Beskrivelse
