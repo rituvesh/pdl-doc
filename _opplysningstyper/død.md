@@ -75,5 +75,5 @@ Vises gjeldene verdi, funksjonell historikk ved behov.
     <td>Obligatorisk</td>
     <td></td>
   </tr>
- </tbody>
+</tbody>
 </table>
