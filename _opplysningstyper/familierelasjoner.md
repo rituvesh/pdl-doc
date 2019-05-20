@@ -21,15 +21,14 @@ PDL er master for D.nr. og utvandret.
 
 #### Historikk
 
-
 <thead>
-  <tr>
-    <th>Informasjonselement</th>
-    <th>Beskrivelse</th>
-    <th>Kodeverdier</th>
-    <th>Kompletthet</th>
-    <th>Kvalitet</th>
-  </tr>
+ <tr>
+  <th>Informasjonselement</th>
+  <th>Beskrivelse</th>
+  <th>Kodeverdier</th>
+  <th>Kompletthet</th>
+  <th>Kvalitet</th>
+ </tr>
 </thead>
 
 <tbody>
