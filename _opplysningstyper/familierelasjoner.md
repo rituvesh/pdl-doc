@@ -22,14 +22,38 @@ PDL er master for D.nr. og utvandret.
 #### Historikk
 
 
+<thead>
+  <tr>
+    <th>Informasjonselement</th>
+    <th>Beskrivelse</th>
+    <th>Kodeverdier</th>
+    <th>Kompletthet</th>
+    <th>Kvalitet</th>
+  </tr>
+</thead>
 
-
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Relasjonstype | mulige verdier: mor, far, medmor, barn | | | |
-| FREGs kilde | må analyseres | | | |
-| PDL sin kilde | kun dersom PDL er master: utenlandsk myndighet | | | |
-
-
+<tbody>
+    <tr>
+      <th scope="row">Relasjonstype</th>
+      <td>mulige verdier: mor, far, medmor, barn</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">FREGs kilde</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+  </tr>
+  <tr>
+    <th scope="row">PDL sin kilde</th>
+    <td>kun dersom PDL er master: utenlandsk myndighet</td>
+    <td></td>
+    <td></td>
+    <td></td>
+   </tbody>
+  </table>
 
 
