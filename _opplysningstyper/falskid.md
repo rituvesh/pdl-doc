@@ -81,7 +81,7 @@ Nei, anses som en sluttstatus.
     <td></td>
     <td></td>
     <td></td>
-  </tr>
-</tbody>
+   </tr>
+  </tbody>
 </table>
 
