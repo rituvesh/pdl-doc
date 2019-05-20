@@ -21,7 +21,7 @@ PDL er master for D.nr. og utvandret.
 
 #### Historikk
 
-<tbale class="table">
+<table class="table">
 <thead>
  <tr>
   <th>Informasjonselement</th>
