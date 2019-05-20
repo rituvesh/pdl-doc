@@ -50,8 +50,3 @@ Vises gjeldene verdi, funksjonell historikk ved behov.
     
     
 
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Kjønn | Gyldige verdier: mann, kvinne (3. kjønn når PDL er master) | | Obligatorisk | |
-
-
