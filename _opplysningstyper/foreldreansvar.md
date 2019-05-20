@@ -59,7 +59,7 @@ Ja
     </tr>
     <tr>
       <th scope="row">Ansvarssubjekt</th>
-      <td>f.nr. for personen som har ansvarlige; ansvarssubjekt uten identifikator<td>
+      <td>f.nr. for personen som har ansvarlige; ansvarssubjekt uten identifikator</td>
       <td></td>
       <td></td>
       <td></td>
