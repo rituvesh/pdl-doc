@@ -72,14 +72,4 @@ PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under an
   </tbody>
 </table>
       
-      
-
-
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Fødselsdato | Dato en person er født | | Valgfri | |
-| Fødselsår | Årsatll en person er født | | Obligatorisk | |
-| Fødested | Sted en person er født | | Valgfri | |
-| Fødekommune i Norge | Angis som kommunenummer | | Valgfri | |
-| Fødeland | Angis som landkode | | Valgfri | | 
-
+ 
