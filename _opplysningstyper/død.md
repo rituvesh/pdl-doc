@@ -27,6 +27,7 @@ Mulige kilder PDL: E500, utenlandske trygdemyndigheter
 
 Vises gjeldene verdi, funksjonell historikk ved behov.
 
+
 <table class="table">
   <thead>
     <tr>
@@ -71,7 +72,6 @@ Vises gjeldene verdi, funksjonell historikk ved behov.
     <th scope="row">NAVs kilde (under avklaring)</th>
     <td>dersom PDL er master</td>
     <td>Utenlandsk myndigheter</td>
-    <td></td>
     <td>Obligatorisk</td>
     <td></td>
   </tbody>
