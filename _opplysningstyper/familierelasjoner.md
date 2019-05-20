@@ -54,7 +54,7 @@ PDL er master for D.nr. og utvandret.
     <td></td>
     <td></td>
   </tr>
-</tbody>
+ </tbody>
 </table>
 
 
