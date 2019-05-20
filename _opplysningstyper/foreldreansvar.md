@@ -28,16 +28,53 @@ FREG er master
 
 Ja
 
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Eksempel</th>
+      <th>Kompletthet</th>
+      <th>Kvalitet</th>
+     </tr>
+   </thead>
 
-
-
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Ansvarlig eller ansvarlig organisasjon | f.nr., org.nr. (se spesiell info), ansvarlig uten identifikator | | Obligatorisk | |
-| Ansvarstype | mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet | | | |
-| Ansvarssubjekt | f.nr. for personen som har ansvarlige, ansvarssubjekt uten identifikator | | | |
-| FREGs kilde | må analyseres | | | | 
-| Registreringstidspunkt FREG | | | |
-
-
-
+   <tbody>
+    <tr>
+      <th scope="row">Ansvarlig eller ansvarlig organisasjon</th>
+      <td>f.nr., org. nr. (se spesiell infor), ansvarlig uten identifikator</td>
+      <td></td>
+      <td>Obligatorisk</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Ansvarstype</th>
+      <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Ansvarssubjekt</th>
+      <td>f.nr. for personen som har ansvarlige; ansvarssubjekt uten identifikator<td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">FREGs kilde</th>
+      <td>må analyseres</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Registreringstidspunkt FREG</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+  
