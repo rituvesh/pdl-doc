@@ -26,6 +26,8 @@ FREG er master.
 
 Nei, anses som en sluttstatus.
 
+
+
 <table class="table">
   <thead>
     <tr>
@@ -81,16 +83,4 @@ Nei, anses som en sluttstatus.
     <td></td>
   </tbody>
  </table>
-
-
-
-| Informasjonselement | Beskrivelse | Eksempel | Kompletthet | Kvalitet |
-|--|--|--|--|--|
-| Rett identitet ved opplysninger | navn, fødselsdato og statsborgerskap | | Valgfri |  |
-| Rett identitet ved identifikasjonsnummer | f.nr. eller d.nr. | | Valgfri |  |
-| Rett identitet er ukjent | | | Obligatorisk dersom ikke de to andre er utfylt | |
-| Kilde til FREG | Mulige kilder skatteetaten, UDI, påtalemyndigheten i politiet, NAV | | 
-| Registreringstidspunkt PDL | | | Obligatorisk | |
-| Ajourholdstidspunkt FREG | | | |
-
 
