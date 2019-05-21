@@ -5,6 +5,7 @@ oppslag: ja
 sok: ja
 produsent-freg: nei
 produsent-nav: nei
+tilgjengelig-fra: juni 2019
 ---
 
 #### Beskrivelse
@@ -40,6 +41,20 @@ Ja, ved behov
   
   <tbody>
     <tr>
+      <th scope="row">Adresse for delt bosted</th>
+      <td>Kan være veiadresse, matrikkeladresse eller ukjent bosted</td>
+      <td></td>
+      <td>Obligatorisk</td>
+      <td>Må analyseres</td>
+    </tr>
+    <tr>
+      <th scope="row">Adressegradering</th>
+      <td>Gyldige verdier: ugradert, klientadresse, fortrolig</td>
+      <td></td>
+      <td>Obligatorisk</td>
+      <td></td>
+    </tr>
+    <tr>
       <th scope="row">Startdato for kontrakt</th>
       <td>Avtalen mellom foreldrene har en startdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter</td>
       <td></td>
@@ -48,7 +63,7 @@ Ja, ved behov
     </tr>
     <tr>
       <th scope="row">Sluttdato for kontrakt</th>
-      <td></td>
+      <td>Avtalen mellom foreldrene kan ha en sluttdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter</td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
@@ -57,7 +72,7 @@ Ja, ved behov
       <th scope="row">Master</th>
       <td>FREG</td>
       <td></td>
-      <td></td>
+      <td>Obligatorisk</td>
       <td></td>
     </tr>
     <tr>
