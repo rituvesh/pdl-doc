@@ -72,7 +72,7 @@ Ja, ved behov
       <th scope="row">Master</th>
       <td>FREG</td>
       <td></td>
-      <td></td>
+      <td>Obligatorisk</td>
       <td></td>
     </tr>
     <tr>
