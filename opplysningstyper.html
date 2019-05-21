@@ -10,6 +10,10 @@ submenu: opplysningstyper.html
             <div class="col-md-12">
                 <h3><a id="{{ opplysningstype.navn }}">{{ opplysningstype.navn }}</a></h3>
 
+                <div class="alert alert-info" role="alert">
+                    Denne opplysningstypen er planlagt tilgjengelig fra <b> {{ opplysningstype.tilgjengelig-fra }} </b>
+                </div>
+
                 <ul class="menu-inline">
                     {%- if opplysningstype.hendelser == 'ja' -%} <li><a href="#"><i class="fa fa-envelope"></i> Hendelser</a></li> {%- endif -%}
                     {%- if opplysningstype.oppslag == 'ja' -%} <li><a href="#"><i class="fa fa-sync-alt"></i> Oppslag</a></li> {%- endif -%}
@@ -17,10 +21,6 @@ submenu: opplysningstyper.html
                     {%- if opplysningstype.produsent-nav == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i NAV</a></li> {%- endif -%}
                     {%- if opplysningstype.produsent-freg == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a></li> {%- endif -%}
                 </ul>
-
-                <div class="alert-info">
-                    <p>Denne opplysningstypen er planlagt tilgjengelig fra {{ opplysningstype.tilgjengelig-fra }}</p>
-                </div>
 
                 {{ opplysningstype.content }}
 

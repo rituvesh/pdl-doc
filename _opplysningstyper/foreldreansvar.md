@@ -28,55 +28,54 @@ FREG er master
 
 Ja
 
-
+#### Informasjonselementer
 
 <table class="table">
-  <thead>
-    <tr>
-      <th>Informasjonselement</th>
-      <th>Beskrivelse</th>
-      <th>Eksempel</th>
-      <th>Kompletthet</th>
-      <th>Kvalitet</th>
-     </tr>
-   </thead>
+    <thead>
+        <tr>
+            <th>Informasjonselement</th>
+            <th>Beskrivelse</th>
+            <th>Eksempel</th>
+            <th>Kompletthet</th>
+            <th>Kvalitet</th>
+        </tr>
+    </thead>
 
-  <tbody>
-     <tr>
-      <th scope="row">Ansvarlig eller ansvarlig organisasjon</th>
-      <td>f.nr., org. nr. (se spesiell infor), ansvarlig uten identifikator</td>
-      <td></td>
-      <td>Obligatorisk</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Ansvarstype</th>
-      <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Ansvarssubjekt</th>
-      <td>f.nr. for personen som har ansvarlige; ansvarssubjekt uten identifikator<td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-     <tr>
-      <th scope="row">FREGs kilde</th>
-      <td>må analyseres</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">Registreringstidspunkt FREG</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
+    <tbody>
+        <tr>
+            <th scope="row">Ansvarlig eller ansvarlig organisasjon</th>
+            <td>f.nr., org. nr. (se spesiell infor), ansvarlig uten identifikator</td>
+            <td></td>
+            <td>Obligatorisk</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Ansvarstype</th>
+            <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Ansvarssubjekt</th>
+            <td>f.nr. for personen som har ansvarlige; ansvarssubjekt uten identifikator</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">FREGs kilde</th>
+            <td>må analyseres</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Registreringstidspunkt FREG</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
 </table>
-
