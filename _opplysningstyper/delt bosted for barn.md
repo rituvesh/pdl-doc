@@ -63,7 +63,7 @@ Ja, ved behov
     </tr>
     <tr>
       <th scope="row">Sluttdato for kontrakt</th>
-      <td></td>
+      <td>Avtalen mellom foreldrene kan ha en sluttdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter</td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
