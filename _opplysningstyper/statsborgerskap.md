@@ -44,7 +44,7 @@ Ja
       <td></td>
     </tr>
     <tr>
-      <th scope="row">Evervsdato</th>
+      <th scope="row">Ervervsdato</th>
       <td></td>
       <td></td>
       <td>Valgfri</td>
