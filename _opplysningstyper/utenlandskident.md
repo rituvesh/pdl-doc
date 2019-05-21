@@ -30,6 +30,9 @@ Dersom FREG er master er kilden til FREG kilden (f.eks. skatteetaten, UDI)
 
 Ja
 
+
+
+
 <table class="table">
     <thead>
         <tr>
