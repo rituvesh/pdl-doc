@@ -41,6 +41,20 @@ Ja, ved behov
   
   <tbody>
     <tr>
+      <th scope="row">Adresse for delt bosted</th>
+      <td>Kan være veiadresse, matrikkeladresse eller ukjent bosted</td>
+      <td></td>
+      <td>Obligatorisk</td>
+      <td>Må analyseres</td>
+    </tr>
+    <tr>
+      <th scope="row">Adressegradering</th>
+      <td>Gyldige verdier: ugradert, klientadresse, fortrolig</td>
+      <td></td>
+      <td>Obligatorisk</td>
+      <td></td>
+    </tr>
+    <tr>
       <th scope="row">Startdato for kontrakt</th>
       <td>Avtalen mellom foreldrene har en startdato som benyttes i saksbehandlingen vedrørende rettigheter og plikter</td>
       <td></td>
