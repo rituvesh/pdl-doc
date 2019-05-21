@@ -36,6 +36,7 @@ Ja
       <th>Kompletthet</th>
       <th>Kvalitet</th>
     </tr>
+  </thead>
   <tbody>
     <tr>
       <th scope="row">Sivilstand</th>
