@@ -69,50 +69,41 @@
             <p class="description flex fadeInUp animated">Opplysninger som registeret eksponerer via APIer og
                 hendelser</p>
         </div>
-        <div class="col-md-6">
+
+        <div class="col-md-12">
             <div class="row">
-                <div class="col-sm-6 caption flex fadeInUp animated animated" data-wow-delay="0.1s">
-                    <a href="opplysningstyper.html#Falsk ID" title="Falsk ID"><img
-                            src='assets/images/opplysningstyper/falskid.jpg' height="690" class="serv"
-                            alt="Cursuri"/></a>
-                    <a href="opplysningstyper.html#Falsk ID" title="Falsk ID"><h4>Falsk ID</h4></a>
-                    <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                        lacus.</p>
-                    <a href="opplysningstyper.html#Falsk ID" title="Les mer" class="more">Les mer &nbsp;<i
-                            class="fa fa-angle-right"></i></a>
-                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Opplysningstype</th>
+                        <th>Forventet lanseringsdato</th>
+                        <th>Konsumenttjenester</th>
+                        <th>Produsenttjenester</th>
+                    </tr>
+                    </thead>
 
-                <div class="col-sm-6 caption flex fadeInUp animated animated" data-wow-delay="0.2s">
-                    <a href="opplysningstyper.html#Utenlandsk ident" title="Utenlandsk ident"><img src='assets/images/opplysningstyper/utenlandskid.jpg'
-                                                           class="serv" alt="Cursuri"/></a>
-                    <a href="opplysningstyper.html#Utenlandsk ident" title="Utenlandsk ident"><h4>Utenlandsk ID</h4></a>
-                    <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                        lacus.</p>
-                    <a href="opplysningstyper.html#Utenlandsk ident" title="Les mer" class="more">Les mer &nbsp;<i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-sm-6 caption flex fadeInUp animated animated" data-wow-delay="0.3s">
-                    <a href="opplysningstyper.html#Folkeregisterident" title="Folkeregisteridenter"><img
-                            src='assets/images/opplysningstyper/folkeregisteridenter.jpg' class="serv"
-                            alt="Cursuri"/></a>
-                    <a href="opplysningstyper.html#Folkeregisterident" title="Folkeregisteridenter"><h4>Folkeregisteridenter</h4></a>
-                    <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                        lacus.</p>
-                    <a href="opplysningstyper.html#Folkeregisterident" title="Les mer" class="more">Les mer &nbsp;<i class="fa fa-angle-right"></i></a>
-                </div>
-
-                <div class="col-sm-6 caption flex fadeInUp animated animated" data-wow-delay="0.4s">
-                    <a href="opplysningstyper.html#Opplysninger om dødsbo" title="Dødsbo"><img src='assets/images/opplysningstyper/dodsbo.jpg' class="serv"
-                                                    alt="Cursuri"/></a>
-                    <a href="opplysningstyper.html#Opplysninger om dødsbo" title="Dødsbo"><h4>Dødsbo</h4></a>
-                    <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                        lacus.</p>
-                    <a href="opplysningstyper.html#Opplysninger om dødsbo" title="Les mer" class="more">Les mer &nbsp;<i class="fa fa-angle-right"></i></a>
-                </div>
+                    <tbody>
+                        {% for opplysningstype in site.opplysningstyper %}
+                            <tr>
+                                <th scope="row"><a href="opplysningstyper.html#{{ opplysningstype.navn }}">{{ opplysningstype.navn }}</a></th>
+                                <td>{{ opplysningstype.tilgjengelig-fra }}</td>
+                                <td>
+                                    <ul class="menu-inline">
+                                    {%- if opplysningstype.hendelser == 'ja' -%} <li><a href="#"><i class="fa fa-envelope"></i></a></li> {%- endif -%}
+                                    {%- if opplysningstype.oppslag == 'ja' -%} <li><a href="#"><i class="fa fa-sync-alt"></i></a></li> {%- endif -%}
+                                    {%- if opplysningstype.sok == 'ja' -%} <li><a href="#"><i class="fa fa-search"></i></a></li> {%- endif -%}
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul class="menu-inline">
+                                    {%- if opplysningstype.produsent-nav == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i NAV</a></li> {%- endif -%}
+                                    {%- if opplysningstype.produsent-freg == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a></li> {%- endif -%}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
