@@ -77,29 +77,15 @@
                     <tr>
                         <th>Opplysningstype</th>
                         <th>Forventet lanseringsdato</th>
-                        <th>Konsumenttjenester</th>
-                        <th>Produsenttjenester</th>
                     </tr>
                     </thead>
 
                     <tbody>
-                        {% for opplysningstype in site.opplysningstyper %}
+                        {% assign opplysningstyper = site.opplysningstyper | sort: 'navn' %}
+                        {% for opplysningstype in opplysningstyper %}
                             <tr>
                                 <th scope="row"><a href="opplysningstyper.html#{{ opplysningstype.navn }}">{{ opplysningstype.navn }}</a></th>
                                 <td>{{ opplysningstype.tilgjengelig-fra }}</td>
-                                <td>
-                                    <ul class="menu-inline">
-                                    {%- if opplysningstype.hendelser == 'ja' -%} <li><a href="#"><i class="fa fa-envelope"></i></a></li> {%- endif -%}
-                                    {%- if opplysningstype.oppslag == 'ja' -%} <li><a href="#"><i class="fa fa-sync-alt"></i></a></li> {%- endif -%}
-                                    {%- if opplysningstype.sok == 'ja' -%} <li><a href="#"><i class="fa fa-search"></i></a></li> {%- endif -%}
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul class="menu-inline">
-                                    {%- if opplysningstype.produsent-nav == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i NAV</a></li> {%- endif -%}
-                                    {%- if opplysningstype.produsent-freg == 'ja' -%} <li><a href="#"><i class="fas fa-user-edit"></i> Produsent i Folkeregisteret</a></li> {%- endif -%}
-                                    </ul>
-                                </td>
                             </tr>
                         {% endfor %}
                     </tbody>
