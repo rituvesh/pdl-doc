@@ -41,7 +41,7 @@ Ja
     <tr>
       <th scope="row">Sivilstand</th>
       <td>mulige verdier: uoppgitt, ugift, enke eller enkemann, skilt, separert, registrert partner, separert partner, skilt partner, gjenlevende partner</td>
-      <td></td>
+      <td>"gift"</td>
       <td>Obligatorisk</td>
       <td></td>
     </tr>
@@ -83,7 +83,7 @@ Ja
     <tr>
       <th scope="row">relatert ved Sivilstand</th>
       <td>Eksplisitt angivelse (f.nr. eller d.nr.) av hvem personen er gift med eller separert fra. Hvis innholdet er kun fødselsdato så er det en bi-person (DDMMÅÅ00000). Informasjonen fremkommer også under relasjoner fra FREG.</td>
-      <td></td>
+      <td>"01016012345</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
