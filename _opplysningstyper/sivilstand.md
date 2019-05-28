@@ -48,7 +48,7 @@ Ja
     <tr>
       <th scope="row">Sivilstandsdato</th>
       <td>dato da endring for sivilstand fant sted</td>
-      <td></td>
+      <td>"2001-06-20"</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
@@ -62,14 +62,14 @@ Ja
     <tr>
       <th scope="row">Kommune</th>
       <td>Angis som kommunenummer, ved giftemål oppgis kun kommunenummeret når det er en representant for kommunen som er vigsler.</td>
-      <td></td>
+      <td>"0704"</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
     <tr>
       <th scope="row">Sted</th>
       <td>Stedsnavn i inn- og utlandet der sivilstanden ble endret.</td>
-      <td></td>
+      <td>"Tønsberg kirke"</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
