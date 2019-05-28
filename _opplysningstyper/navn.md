@@ -70,7 +70,7 @@ Ja
       <td>Personen navn i opprinnelig tegn før translitterering, type tegn under avklaring</td>
       <td></td>
       <td>Valgfri</td>
-      <td></td>
+      <td>Må analyseres - ikke tilgjengelig per mai 2019</td>
     </tr>
   </tbody>
   </table>
