@@ -5,7 +5,7 @@ oppslag: ja
 sok: ja
 produsent-freg: nei
 produsent-nav: nei
-tilgjengelig-fra: desebmer 2019
+tilgjengelig-fra: desember 2019
 ---
 
 #### Beskrivelse
@@ -63,7 +63,7 @@ Ja
       <td>Personnavn som benyttes ved maskinelle utskrifter (opptil 40 tegn)</td>
       <td></td>
       <td>Valgfri</td>
-      <td></td>
+      <td>Ulik kvalitet: uklar når feltet er fylt ut for de med under 40 tegn, samt vilkårlig rekkefølge</td>
     </tr>
     <tr>
       <th scope="row">Originalt navn</th>
