@@ -47,28 +47,28 @@ Ja
     </tr>
     <tr>
       <th scope="row">Sivilstandsdato</th>
-      <td></td>
+      <td>dato da endring for sivilstand fant sted</td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
     </tr>
     <tr>
       <th scope="row">Myndighet</th>
-      <td></td>
-      <td></td>
+      <td>myndigheten som har vedtatt endringen, i DSF representert som vigselstype</td>
+      <td>folkeregistermyndigheten, den Norske kirke, borgerlig etc.</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
     <tr>
       <th scope="row">Kommune</th>
-      <td>Angis som kommunenummer</td>
+      <td>Angis som kommunenummer, ved giftemål oppgis kun kommunenummeret når det er en representant for kommunen som er vigsler.</td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
     </tr>
     <tr>
       <th scope="row">Sted</th>
-      <td></td>
+      <td>Stedsnavn i inn- og utlandet der sivilstanden ble endret.</td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
@@ -76,6 +76,13 @@ Ja
     <tr>
       <th scope="row">Utland</th>
       <td>Angis som landkode</td>
+      <td></td>
+      <td>Valgfri</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">relatert ved Sivilstand</th>
+      <td>Eksplisitt angivelse (f.nr. eller d.nr.) av hvem personen er gift med eller separert fra. Hvis innholdet er kun fødselsdato så er det en bi-person (DDMMÅÅ00000). Informasjonen fremkommer også under relasjoner fra FREG.</td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
