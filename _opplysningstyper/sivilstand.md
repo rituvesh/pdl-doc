@@ -83,7 +83,7 @@ Ja
     <tr>
       <th scope="row">relatert ved Sivilstand</th>
       <td>Eksplisitt angivelse (f.nr. eller d.nr.) av hvem personen er gift med eller separert fra. Hvis innholdet er kun fødselsdato så er det en bi-person (DDMMÅÅ00000). Informasjonen fremkommer også under relasjoner fra FREG.</td>
-      <td>"01016012345</td>
+      <td>"01016012345"</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
