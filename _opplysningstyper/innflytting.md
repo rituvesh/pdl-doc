@@ -53,8 +53,15 @@ Ja.
       <td></td>
     </tr>
     <tr>
-      <th scope="row">gyldighetstidspunkt</th>
+      <th scope="row">gyldighetstidspunkt i FREG</th>
       <td>Gyldighetsdatoen settes til vedtaksdato for godkjent innflytting fra Utlendingsmyndigheten.</td>
+      <td></td>
+      <td>Valgfri</td>
+      <td></td>
+    </tr>
+      <tr>
+      <th scope="row">ajourholdstidspunkt i FREG</th>
+      <td></td>
       <td></td>
       <td>Valgfri</td>
       <td></td>
