@@ -70,13 +70,6 @@ Ja.
       <td></td>
     </tr>
     <tr>
-      <th scope="row">Master</th>
-      <td>FREG</td>
-      <td></td>
-      <td>Obligatorisk</td>
-      <td></td>
-    </tr>
-    <tr>
       <th scope="row">ajourholdstidspunkt FREG</th>
       <td></td>
       <td></td>
