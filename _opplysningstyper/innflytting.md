@@ -26,4 +26,45 @@ FREG er master.
 
 Ja.
 
-
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Eksempel</th>
+      <th>Kompletthet</th>
+      <th>Kvalitet</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th scope="row">fraflyttingsland</th>
+      <td>representert som landkode</td>
+      <td></td>
+      <td>Valgfri</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">fraflyttingssted i utlandet</th>
+      <td>Steds- eller bynavn i fritekst</td>
+      <td></td>
+      <td>Valgfri</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">gyldighetstidspunkt</th>
+      <td>Gyldighetsdatoen settes til vedtaksdato for godkjent innflytting fra Utlendingsmyndigheten.</td>
+      <td></td>
+      <td>Valgfri</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">FREGs kilde</th>
+      <td></td>
+      <td></td>
+      <td>Valgfri</td>
+      <td></td>
+    </tr>
+   </tbody>
+</table>
