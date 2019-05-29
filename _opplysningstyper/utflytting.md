@@ -16,6 +16,8 @@ ikke lenger har adgang til å oppholde seg i Norge regnes som utflyttet, jf. fol
 melding til Folkeregisteret når en person har utgått oppholdstillatelse, tilbakekalt oppholdstillatelse eller statsborgerskap, bortfalt
 oppholdstillatelse eller er utvist fra Norge. 
 
+Informasjonselementet inneholder informasjon om hvilket land og sted i dette landet en utflyttet person bor eller bodde etter utflyttingen fra Norge.
+
 #### Spesiell informasjon
 
 Tidligere begrep utvandring.
