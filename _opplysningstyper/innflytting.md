@@ -41,14 +41,14 @@ Ja.
     <tr>
       <th scope="row">fraflyttingsland</th>
       <td>representert som landkode</td>
-      <td></td>
+      <td>"SWE"</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
     <tr>
       <th scope="row">fraflyttingssted i utlandet</th>
       <td>Steds- eller bynavn i fritekst</td>
-      <td></td>
+      <td>"Stockholm"</td>
       <td>Valgfri</td>
       <td></td>
     </tr>
