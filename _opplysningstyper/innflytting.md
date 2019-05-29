@@ -10,7 +10,7 @@ tilgjengelig-fra: februar 2020
 
 #### Beskrivelse
 
-Informasjon om en person som innvandrer og bosetter seg i Norge.
+Informasjon om en person som innvandrer og bosetter seg i Norge. Informasjonselementet inneholder informasjon om hvor en person bodde før den innflyttet til Norge. For å se om personen har status som bosatt eller utflyttet se personstatus.
 
 #### Spesiell informasjon
 
