@@ -10,13 +10,17 @@ tilgjengelig-fra: februar 2020
 
 #### Beskrivelse
 
-Informasjon om en person som innvandrer og bosetter seg i Norge. Informasjonselementet inneholder informasjon om hvor en person bodde før den innflyttet til Norge. For å se om personen har status som bosatt eller utflyttet se personstatus.
+Informasjonselementet inneholder informasjon om hvor en person bodde før den innflyttet til Norge. For å se om personen har status som bosatt eller utflyttet se personstatus. 
+
+Videre vil vi få informasjon om fraflyttingsland - og sted for personer med D.nr. som ikke anses som bosatt i Norge. Muligens vil dette gjelde kun for folkeregisterlovens § 4-2, 2. ledd: "person som tar opphold i en norsk kommune på grunn av inntektsgivende aktivitet, og som dokumenterer pendling fra bolig i et annet land innenfor EØS, kan unntas registrering som bosatt i Norge"
 
 #### Spesiell informasjon
 
 Tidligere begrep innvandring.
 Når personer innflytter til Norge vil de endres personstatus til bosatt.
 Ved førstegangsinnflytting vil det også opprettes f.nr.
+
+Konsekvenser for D.nr. personer må utredes nærmere.
 
 #### Master og kilder
 
