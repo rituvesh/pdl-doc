@@ -1,5 +1,5 @@
 ---
-navn: Familierelasjoner
+navn: Familierelasjoner/ juridisk opphav (navnet under avklaring)
 hendelser: ja
 oppslag: ja
 sok: ja
