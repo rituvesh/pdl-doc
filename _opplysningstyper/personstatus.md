@@ -10,10 +10,13 @@ tilgjengelig-fra:
 
 #### Beskrivelse
 
-
+Personstatus beskriver personens tilknytting til Folkeregisteret.
 
 #### Spesiell informasjon
 
+D.nr. vil i folkeregisteret ha to forskjellige statuser fremover: midlertidig og inaktiv. Det er ikke besluttet enda hvordan NAV kan nyttiggjøre seg dette. 
+
+Begrepet utvandret er erstattet med utflytting.
 
 #### Master og kilder
 
@@ -21,6 +24,7 @@ FREG er master.
 
 #### Historikk
 
+Må analyseres.
 
 
 <table class="table">
