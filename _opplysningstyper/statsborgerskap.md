@@ -10,7 +10,7 @@ tilgjengelig-fra: desember 2019
 
 #### Beskrivelse
 
-Personens statsborgerskap
+Personens statsborgerskap. Statsborgerskap er et forhold til et land som innebærer at man har visse rettigheter og plikter som følger av lovgivningen i det enkelt land.
 
 
 #### Master og kilder
@@ -23,6 +23,10 @@ Mulige kilder: UDI, NAV etc.
 #### Historikk
 
 Ja
+
+#### Kommentar
+
+Bibehold norsk statsborgerskap kommer i tillegg som eget informasjonselement i det nye folkeregisteret. Denne angir at en person beholder sitt norske statsborgerskap i tillegg til det nye statsborgerskapet som personen har ervervet. (Forberedelse til dobbelt statsborgerskap fra tidligst 2020 for flere tilfeller enn i dag.)
 
 
 <table class="table">
@@ -38,7 +42,7 @@ Ja
   <tbody>
     <tr>
       <th scope="row">Statsborgerskap</th>
-      <td>Angis som landkode</td>
+      <td>Angis som landkode, mulig med flere statsborgerskap</td>
       <td></td>
       <td>Obligatorisk</td>
       <td></td>
