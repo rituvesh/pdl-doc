@@ -37,15 +37,15 @@ Vi får historikk fra Folkeregisteret og dette blir eksponert på grensesnittet.
     <tbody>
         <tr>
             <th scope="row">Nivå</th>
-            <td>Graderingsnivået på adressebeskyttelsen. \n\n
-            
-            Mulige verdier: \n
-            Ugradert: Ingen behov for gradering.\n\n
-            
-            Fortrolig (Kode 7 fra TPS): graderingen fortrolig i henhold til Beskyttelsesinnstruksen.\n 
-            Benyttes dersom det vil kunne skade offentlige interesser, en bedrift, en institusjon eller en enkeltperson at dokumentets innhold blir kjent for vedkommende.\n\n
-            
-            Strengt fortrolig (Kode 6 fra TPS): Gradering strengt fortrolig i henhold til Beskyttelsesinnstruksen.\n
+            <td>Graderingsnivået på adressebeskyttelsen. </br>
+            </br>
+            Mulige verdier: </br>
+            Ugradert: Ingen behov for gradering.</br>
+            </br>
+            Fortrolig (Kode 7 fra TPS): graderingen fortrolig i henhold til Beskyttelsesinnstruksen.</br> 
+            Benyttes dersom det vil kunne skade offentlige interesser, en bedrift, en institusjon eller en enkeltperson at dokumentets innhold blir kjent for vedkommende.</br>
+            </br>
+            Strengt fortrolig (Kode 6 fra TPS): Gradering strengt fortrolig i henhold til Beskyttelsesinnstruksen.</br>
             Benyttes dersom det vil kunne forårsake betydelig skade for offentlige interesser, en bedrift, en institusjon eller en enkeltperson at dokumentets innhold blir kjent for uvedkommende.
             </td>
             <td></td>
