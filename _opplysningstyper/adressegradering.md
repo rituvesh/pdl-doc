@@ -36,7 +36,7 @@ Vi får historikk fra Folkeregisteret og dette blir eksponert på grensesnittet.
 
     <tbody>
         <tr>
-            <th scope="row">Nivå</th>
+            <th scope="row">Gradering</th>
             <td>Graderingsnivået på adressebeskyttelsen. <br>
             <br>
             Mulige verdier: <br>
