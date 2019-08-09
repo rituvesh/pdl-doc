@@ -4,7 +4,7 @@ hendelser: ja
 oppslag: ja
 sok: nei
 produsent-freg: ja
-produsent-nav: ja
+produsent-nav: nei
 tilgjengelig-fra: juli 2019
 ---
 #### Testoverskrift
