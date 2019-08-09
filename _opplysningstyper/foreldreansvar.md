@@ -53,7 +53,7 @@ Ja
         <tr>
             <th scope="row">Ansvarstype</th>
             <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
-            <td></td>
+            <td>Test</td>
             <td></td>
             <td></td>
         </tr>
