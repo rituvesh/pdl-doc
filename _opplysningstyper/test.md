@@ -22,3 +22,10 @@ tilgjengelig-fra: juli 2019
     <tr>
       <th scope="row">Test test</th>
       <td>Test angis</td> 
+      <td></td>
+      <td>Test obligatorisk</td>
+      <td></td>
+    </tr>
+  </tbody>
+  </table>
+      
