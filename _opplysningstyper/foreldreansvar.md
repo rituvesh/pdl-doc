@@ -55,7 +55,6 @@ Ja
             <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
             <td>Test</td>
             <td></td>
-            <td></td>
         </tr>
         <tr>
             <th scope="row">Ansvarssubjekt</th>
