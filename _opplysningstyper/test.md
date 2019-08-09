@@ -3,7 +3,7 @@ navn: Test
 hendelser: ja
 oppslag: ja
 sok: nei
-produsent-freg: nei
+produsent-freg: ja
 produsent-nav: ja
 tilgjengelig-fra: juli 2019
 ---
