@@ -2,7 +2,7 @@
 navn: Foreldreansvar - under analyse
 hendelser: ja
 oppslag: ja
-sok: ja
+sok: nei
 produsent-freg: nei
 produsent-nav: nei
 tilgjengelig-fra: desember 2019
@@ -53,7 +53,7 @@ Ja
         <tr>
             <th scope="row">Ansvarstype</th>
             <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
-            <td>Test</td>
+            <td></td>
             <td></td>
         </tr>
         <tr>
