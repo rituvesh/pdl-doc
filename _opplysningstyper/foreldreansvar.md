@@ -2,7 +2,7 @@
 navn: Foreldreansvar - under analyse
 hendelser: ja
 oppslag: ja
-sok: nei
+sok: ja
 produsent-freg: nei
 produsent-nav: nei
 tilgjengelig-fra: desember 2019
@@ -55,8 +55,9 @@ Ja
             <td>mulige verdier: felles, mor, far, medmor, andre (må kartlegges om det er behov, eller om ansvarlig dekker informasjonsbehovet</td>
             <td></td>
             <td></td>
+            <td></td>
         </tr>
-        <tr>
+      <tr>
             <th scope="row">Ansvarssubjekt</th>
             <td>f.nr. for personen som har ansvarlige; ansvarssubjekt uten identifikator</td>
             <td></td>
