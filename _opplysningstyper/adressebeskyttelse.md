@@ -1,6 +1,6 @@
 ---
-navn: Adressegradering - i analysefase
-hendelser: ja
+navn: Adressebeskyttelse
+hendelser: nei
 oppslag: ja
 sok: nei
 produsent-freg: nei
@@ -14,13 +14,17 @@ tilgjengelig-fra: februar 2020
 Informasjon om gradering av adresseinformasjon for personer iht. Beskyttelsesinstruksen.
 Dette ble tidligere omtalt som Diskresjonskode 6 og 7 fra TPS.
 
+Merk at man kan få tomt svar (dvs ingen Adressebeskyttelse) og Ugradert. Dette er slik vi får det fra Folkeregisteret, men vi har ingen tilfeller med Ugradert hittil i Produksjon.
+
 #### Master og kilder
 
-FREG er master.
+Folkeregisteret er eneste kilde og master til opplysningen for NAV.
   
 #### Historikk
 
-Vi får historikk fra Folkeregisteret og dette blir eksponert på grensesnittet.
+Vi får historikk fra Folkeregisteret og dette blir IKKE eksponert på grensesnittet i første omgang.
+Det legges opp til at dette kan legges på ved senere anledning dersom behovet oppstår. 
+Dersom dette blir innført senere, så settes en default på at konsumenter kun skal få ut gjeldende opplysninger (dvs ikke historikk) slik at det ikke feiler for eksisterende konsumenter.
 
 #### Informasjonselementer
 
