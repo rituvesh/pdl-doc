@@ -37,7 +37,6 @@ Dersom dette blir innført senere, så settes en default på at konsumenter kun 
             <th>Kompletthet</th>
         </tr>
     </thead>
-
     <tbody>
         <tr>
             <th scope="row">Gradering</th>

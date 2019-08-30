@@ -9,21 +9,15 @@ tilgjengelig-fra: september 2019
 ---
 
 #### Beskrivelse
-
-
-
-#### Spesiell informasjon
-
-
+Fødselsopplysninger fra Folkeregisteret. Det vil på et hvert tidspunkt kun være en forekomst av fødsel fra Folkeregisteret.
+Dvs at alle endringer er korrigeringer.
 
 #### Master og kilder
 
 FREG er master
 PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under analyse)
 
-
-#### Historikk
-
+#### Informasjonselementer
 <table class="table">
     <thead>
         <tr>
@@ -38,35 +32,35 @@ PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under an
       <tr>
         <th scope="row">Fødselsdato</th>
         <td>Dato en person er født</td>
-        <td></td>
+        <td>2019-11-20</td>
         <td>Valgfri</td>
         <td></td>
       </tr>
       <tr>
         <th scope="row">Fødselsår</th>
         <td>Årstall en person er født</td>
-        <td></td>
+        <td>2019</td>
         <td>Obligatorisk</td>
         <td></td>
       </tr>
       <tr>
         <th scope="row">Fødested</th>
         <td>Sted en person er født</td>
-        <td></td>
+        <td>Oslo S.S</td>
         <td>Valgfri</td>
         <td></td>
       </tr>
       <tr>
-        <th scope="row">Fødekommune i Norge</th>
-        <td>Angis som kommunenummer</td>
-        <td></td>
+        <th scope="row">Fødekommune</th>
+        <td>Angis som kommunenummer (Kun angitt for fødeland Norge)</td>
+        <td>0301</td>
         <td>Valgfri</td>
         <td></td>
       </tr>
       <tr>
         <th scope="row">Fødeland</th>
         <td>Angis som landkode</td>
-        <td></td>
+        <td>NOR</td>
         <td>Valgfri</td>
         <td></td>
       </tr>
