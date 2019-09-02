@@ -38,9 +38,9 @@ PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under an
       </tr>
       <tr>
         <th scope="row">Fødselsår</th>
-        <td>Årstall en person er født</td>
+        <td>Årstall en person er født, vil alltids være utfylt fra Folkeregisteret, men kan forekomme NAV opplysninger der man f.eks kun har land + sted. Dvs hvis master = FREG, så vil alltids dette feltet være utfylt.</td>
         <td>2019</td>
-        <td>Obligatorisk</td>
+        <td>Valgfri</td>
         <td></td>
       </tr>
       <tr>
