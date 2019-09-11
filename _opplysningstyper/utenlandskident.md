@@ -19,19 +19,17 @@ Saksnummer eller identifikasjonsdokumentnummer (passnummer) anses ikke som en ut
 
 Brukes for samhandling med utenlandske trygdemyndigheter, verifisering og identifisering.
 
+
 #### Master og kilder
 
-NAV og FREG som master
-    
+NAV og FREG som master.
+
 Dersom NAV er master er utenlandske trygdemyndigheter kilde
-Dersom FREG er master er kilden til FREG kilden (f.eks. skatteetaten, UDI)
+Dersom FREG er master er kilden til FREG kilden (f.eks. skatteetaten, UDI).
 
 #### Historikk
 
 Ja
-
-
-
 
 <table class="table">
     <thead>
@@ -73,4 +71,4 @@ Ja
             <td>Det er sjelden at vi får informasjon om at en Utenlandsk ID ikke lengre er i bruk fra utstederlandet.</td>
         </tr>
     </tbody>
-    </table>
+</table>

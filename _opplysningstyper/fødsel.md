@@ -1,5 +1,5 @@
 ---
-navn: Fødsel - under analyse
+navn: Fødsel
 hendelser: ja
 oppslag: ja
 sok: ja
@@ -66,5 +66,7 @@ PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under an
       </tr>
   </tbody>
 </table>
-      
- 
+
+#### Filtrering
+Folkeregisteret har oppført i sin informasjonsmodell at det kun kan være en fødsel, men i tjenestekontrakten kan man få en liste og ved få tilfeller har man flere men kun en gjeldende.
+Vi beholder kun den ene gjeldende fra Folkeregisteret og dersom man får et nytt innslag i Folkeregisteret, så fører det til en korrigering i NAV. Dette skjer ved svært få tilfeller. 
