@@ -22,6 +22,24 @@ I TPS ble det gjort flere modifiseringer på dataen de får fra Folkeregisteret 
 1. Person blir meldt død i NAV, får personstatus død. Dette blir ikke videreført. Se på dødsfall.
 2. Person dør 19.01.2019, saksbehandling skjer 21.01.2019, NAV modifiserer gyldighetstidspunktet på personstatus død til å være 19.01.2019. Dette blir ikke videreført. Skal man vite dødsdato, se på dødsfall.
 
+Overgang fra TPS til PDL på kodeverk:
+
+| TPS                                        | PDL / Folkeregisteret | Beskrivelse                                                                                      |
+|--------------------------------------------|-----------------------|--------------------------------------------------------------------------------------------------|
+| BOSA                                       | bosatt                |                                                                                                  |
+| DØD                                        | doed                  |                                                                                                  |
+| DØDD (Død Dnr)                             | doed                  |                                                                                                  |
+| UTPE                                       | opphoert              |                                                                                                  |
+| ADNR                                       | inaktiv               |                                                                                                  |
+| ADNR                                       | midlertidig           |                                                                                                  |
+| FOSV                                       | forsvunnet            |                                                                                                  |
+| UTVA                                       | utflyttet             |                                                                                                  |
+| UREG                                       | ikke_bosatt           |                                                                                                  |
+| UTAN (Utgått person annullert tilgang fnr) | ikke_bosatt)          |                                                                                                  |
+| FØDR                                       | foedselsregistrert    |                                                                                                  |
+| ABNR (Aktivt bostnr)                       | UTGÅR                 | Bost er ikke noe som ligger i Folkeregisteret og vil derfor ikke ha en folkeregisterpersonstatus |
+| UFUL                                       | UTGÅR                 |                                                                                                  |
+
 #### Spesiell informasjon
 
 D.nr. vil i folkeregisteret ha to forskjellige statuser fremover: midlertidig og inaktiv. Det er ikke besluttet enda hvordan NAV kan nyttiggjøre seg dette. 
