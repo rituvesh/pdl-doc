@@ -12,6 +12,18 @@ tilgjengelig-fra: september 2019
 Fødselsopplysninger fra Folkeregisteret. Det vil på et hvert tidspunkt kun være en forekomst av fødsel fra Folkeregisteret.
 Dvs at alle endringer er korrigeringer.
 
+##### TPS
+TPS i dag utleder fødselsdato basert på fødselsnummer/dnummer. Dette har fungert i hovedsak greit, men Folkeregisteret har nå lagt opp til at man kan ha identer som har en annen fødselsdato enn det som står i identen.
+
+Eksempel ved rekvirering av dnummer kan man spesifisere at fødselsdato er ukjent. 
+Vi er påkrevd å sende inn en dato men da er praksisen slik at man setter rekvireringsdato. 
+F.eks: 2019-09-19 (rekvireringsdato), men bytter ut år med fødselsår, altså fødselsår 1989 blir da: 1989-09-19. Dette fører til et dnummer som har fødselsdato 01-01-2019 (fra Folkeregisteret), men en ident som begynner med 590989. 
+TPS vil da utlede fødselsdato til å være 19-09-1989.
+
+Folkeregisteret har også lagt opp til at man fra dem kan få fødselsår, men IKKE fødselsdato. Dette er for å støtte caset over der man egentlig ikke vet dato.
+Dette har ikke blitt tatt i bruk fra Folkeregisteret sin side per dags dato.
+
+
 #### Master og kilder
 
 FREG er master
