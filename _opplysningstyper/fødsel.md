@@ -9,11 +9,11 @@ tilgjengelig-fra: september 2019
 ---
 
 #### Beskrivelse
-Fødselsopplysninger fra Folkeregisteret. Det vil på et hvert tidspunkt kun være en forekomst av fødsel fra Folkeregisteret.
+Fødselsopplysninger fra Folkeregisteret. Det vil på et hvert tidspunkt kun være en forekomst av fødsel per person fra Folkeregisteret.
 Dvs at alle endringer er korrigeringer.
 
 ##### TPS
-TPS i dag utleder fødselsdato basert på fødselsnummer/dnummer. Dette har fungert i hovedsak greit, men Folkeregisteret har nå lagt opp til at man kan ha identer som har en annen fødselsdato enn det som står i identen.
+TPS utleder i dag fødselsdato basert på fødselsnummer/dnummer. Dette har fungert i hovedsak greit, men Folkeregisteret har nå lagt opp til at man kan ha identer som har en annen fødselsdato enn det som står i identen.
 
 Eksempel ved rekvirering av dnummer kan man spesifisere at fødselsdato er ukjent. 
 Vi er påkrevd å sende inn en dato men da er praksisen slik at man setter rekvireringsdato. 
@@ -26,7 +26,7 @@ Dette har ikke blitt tatt i bruk fra Folkeregisteret sin side per dags dato.
 
 #### Master og kilder
 
-FREG er master
+FREG er master  
 PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under analyse)
 
 #### Informasjonselementer

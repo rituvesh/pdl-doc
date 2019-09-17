@@ -15,11 +15,11 @@ Opplysninger knyttet mot dødsfall.
 
 #### Master og kilder
 
-FREG er master
-PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under analyse).
+FREG er master  
+PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under analyse).  
 Dersom behovet er å benytte Folkeregisteret sine opplysninger om død må dere filtrere på master = FREG.
 
-Mulige kilder FREG: tingretten, legen, norsk utenriksstasjon
+Mulige kilder FREG: tingretten, legen, norsk utenriksstasjon  
 Mulige kilder PDL: E500, utenlandske trygdemyndigheter
 
 #### Informasjonselementer
