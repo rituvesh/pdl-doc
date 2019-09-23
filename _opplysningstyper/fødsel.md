@@ -21,7 +21,9 @@ F.eks: 2019-09-19 (rekvireringsdato), men bytter ut år med fødselsår, altså 
 TPS vil da utlede fødselsdato til å være 19-09-1989.
 
 Folkeregisteret har også lagt opp til at man fra dem kan få fødselsår, men IKKE fødselsdato. Dette er for å støtte caset over der man egentlig ikke vet dato.
-Dette har ikke blitt tatt i bruk fra Folkeregisteret sin side per dags dato.
+Dette har begynt å bli tatt i bruk i Folkeregisteret og dermed også PDL, men vil ikke reflekteres i TPS.
+
+Data som er migrert fra DSF til det nye Folkeregisteret og der fødselsdato egentlig er ukjent, vil ha dårlig kvalitet ettersom de setter fødselsdato basert på dnummeret.
 
 
 #### Master og kilder
