@@ -54,5 +54,12 @@ Dersom dette blir innført senere, så settes en default på at konsumenter kun 
             <td></td>
             <td>obligatorisk</td>
         </tr>
+        <tr>
+          <th scope="row">Metadata</th>
+          <td>Se felles definisjon</td>
+          <td>n/a</td>
+          <td>Valgfri</td>
+          <td>God</td>
+        </tr>
     </tbody>
 </table>

@@ -32,8 +32,8 @@ Når vi eksponerer noe via PDL-Api, så vil alle opplysninger som PDL har lagret
       <tr>
         <th scope="row">master</th>
         <td>Hvem som eier opplysningen. F.eks hvis vi får et navn med master FREG, så kan endringer KUN gjøres via Folkeregisteret. NAV kan ikke modifisere disse direkte og må i så fall gå via integrasjoner i Folkeregisteret</td>
-        <td>FREG / NAV (Kan komme flere)</td>
-        <td>Påkrevd. Vi vil informere om hvor opplysningen kommer fra. I dag er det i FREG og NAV, men f.eks kunne man ha utvidet med UDI og KRR dersom vi hadde tatt inn opplysnigner derifra</td>
+        <td>FREG / PDL (Kan komme flere)</td>
+        <td>Påkrevd. Vi vil informere om hvor opplysningen kommer fra. I dag er det i FREG og PDL, men f.eks kunne man ha utvidet med UDI og KRR dersom vi hadde tatt inn opplysnigner derifra</td>
       </tr>
       <tr>
         <th scope="row">endringer</th>
@@ -90,7 +90,7 @@ F.eks: Dersom man ønsker å presentere opprettet tidspunktet og sist endring (s
       </tr>
       <tr>
         <th scope="row">kilde</th>
-        <td>Kilden for opplysningen. Når det er NAV som er Master, så er det påkrevd å oppgi kilden, men Folkeregisteret gir oss kun hvilke etat det kom fra (f.eks NAV, UDI)</td>
+        <td>Kilden for opplysningen. Når det er PDL som er Master, så er det påkrevd å oppgi kilden, men Folkeregisteret gir oss kun hvilke etat det kom fra (f.eks NAV, UDI)</td>
         <td>NAV / UDI / FREG (dersom vi ikke får noe fra Folkeregisteret) / Krankenkasse / Sykehuskassan</td>
         <td>Påkrevd</td>
       </tr>

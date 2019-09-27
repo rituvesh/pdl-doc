@@ -78,6 +78,13 @@ PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under an
         <td>Valgfri</td>
         <td></td>
       </tr>
+      <tr>
+        <th scope="row">Metadata</th>
+        <td>Se felles definisjon</td>
+        <td>n/a</td>
+        <td>Valgfri</td>
+        <td>God</td>
+      </tr>
   </tbody>
 </table>
 
