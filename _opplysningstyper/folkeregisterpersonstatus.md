@@ -99,9 +99,9 @@ Oppgitt personstatus fra Folkeregisteret til konsumenter uten hjemmel til taushe
 
 ##### TPS
 I TPS ble det gjort flere modifiseringer på dataen de får fra Folkeregisteret som ikke blir videreført i PDL.
-1. Person blir meldt død i NAV, får personstatus død. Dette blir ikke videreført. Se på dødsfall.
-2. Person dør 19.01.2019, saksbehandling skjer 21.01.2019, NAV modifiserer gyldighetstidspunktet på personstatus død til å være 19.01.2019. Dette blir ikke videreført. Skal man vite dødsdato, se på dødsfall.
-3. Personer som hadde personstatus opphørt kastet feilmelding fra TPS og var dermed ikke mulig å få tilbake, i PDL vil disse bli returnert.
+1. Modifisering av Folkeregisterpersonstatus på bakgrunn av saksbehandling i NAV. F.eks: Person blir meldt død i NAV, får personstatus død. Dette blir ikke videreført. Se på dødsfall.
+2. Modifisering av gyldighetstidspunktet til å sammenfalle med tidspunkt i virkeligheten. F.eks: Person dør 19.01.2019, saksbehandling skjer 21.01.2019, NAV modifiserer gyldighetstidspunktet på personstatus død til å være 19.01.2019. Dette blir ikke videreført. Skal man vite dødsdato, se på dødsfall.
+3. Spærre på oppslag mot opphørte personer. Personer som hadde personstatus opphørt kastet feilmelding fra TPS og var dermed ikke mulig å få tilbake, i PDL vil disse bli returnert.
 
 Overgang fra TPS til PDL på kodeverk:
 
@@ -126,24 +126,6 @@ Overgang fra TPS til PDL på kodeverk:
 ###### Dnummer personer
 D.nr. vil i folkeregisteret ha to forskjellige statuser fremover: midlertidig og inaktiv. Det er ikke besluttet enda hvordan NAV kan nyttiggjøre seg dette.
 
-###### Gyldighetsperioder
-Som man ser lengre ned, så er ikke `GyldigFraOgMed` et påkrevd felt. Dette er fordi Folkeregisteret ved migrering ikke hadde noen historikk på når en opplysning gjelder ifra.
-I disse tilfellene får vi `null` / ikke oppgitt ettersom de ikke vet når statusen gjelder ifra, men de vet at statusen i seg selv er korrekt, bare ikke fra når.
-
-Eksempler:
-```
-Ingen starttidspunkt på bosatt
------ Bosatt ----->
-
-Ingen starttidspunkt på bosatt, overtatt av en ny status
------ Bosatt ----->|----- Død ----->
-``` 
-
-Den gjeldende vil alltids være den som har høyest gyldighetstidspunkt. Dvs dersom man ønsker å vise finne ut hvilke som er gjeldende så må man sortere på `GyldigFraOgMed`,
-der uspesifisert er den først i listen (`null` first). Altså likt eksemplet over.
-Det forekommer også aldri opphørt på en status, den blir alltids overtatt av en annen. Derfor finnes ikke `GyldigTilOgMed` eller opphørstidspunkt. Merk at statusen i seg selv kan være opphørt, men den gjelder da fra et tidspunkt som er satt i `GyldigFraOgMed`.
-
-
 #### Master og kilder
 
 FREG er master.
@@ -152,6 +134,28 @@ FREG er master.
 
 Folkeregisteret har ikke migrert inn historikk på Folkeregisterpersonstatus. Dette er pga for dårlig datakvalitet.
 Historikk vil komme på nyopprettede personstatuser.
+
+PDL-Api eksponerer den historikken vi har dersom det er ønsket. Dette kan styres via et flagg i spørringen.
+Regelen for utledelse av gjeldende verdi er slik:
+Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato) (null first). Det vil ikke forekomme noe opphørstidspunkt på denne opplysningen ettersom opphør er en egen personstatus.
+Det er alltids en annen som overtar for den forrige personstatusen.
+
+OBS OBS: Folkeregisteret har ofte satt `null` (uspesifisert) start-tidspunkt på de opplysningene de har migrert inn ettersom de ikke vet hva gyldighetstidspunktet er. 
+
+Visuelt eksempel:
+```
+---1--->
+                 |---3--->
+        |---2--->
+
+Sortert:
+---1--->|---2--->|---3--->
+```
+1. `folkeregisterMetadata.gyldighetstidspunkt = null`
+2. `folkeregisterMetadata.gyldighetstidspunkt = 2019-01-23`
+3. `folkeregisterMetadata.gyldighetstidspunkt = 2019-11-30`
+
+Dersom man spesifiserer `historikk: false` i grensesnittet, vil kun nr 3 blir returnert.
 
 ### Informasjonselementer
 <table class="table">
@@ -174,11 +178,11 @@ Historikk vil komme på nyopprettede personstatuser.
       <td>God på nye, ingen historikk</td>
     </tr>
     <tr>
-      <th scope="row">GyldigFraOgMed</th>
-      <td>Dato + tid for når denne opplysningen ble fastsatt / gjelder fra</td>
-      <td>2019-01-24T13:01:59</td>
-      <td>Valgfri</td>
-      <td>God på nye, Obs obs, les lengre opp om gyldighetsperioder under spesiell informasjon</td>
+      <th scope="row">FolkeregisterMetadata</th>
+      <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
+      <td>n/a</td>
+      <td>Obligatorisk</td>
+      <td>God</td>
     </tr>
     <tr>
       <th scope="row">Metadata</th>
@@ -190,7 +194,50 @@ Historikk vil komme på nyopprettede personstatuser.
     </tbody>
 </table>
 
-#### Filtrering fra Folkeregisteret
+##### FolkeregisterMetadata
+
+Inneholder metadata som vi har fått fra Folkeregisteret.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Kompletthet</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+        <tr>
+          <th scope="row">Ajourholdstidspunkt</th>
+          <td>Tidspunktet opplysningen ble opprettet i Folkeregisteret</td>
+          <td>Valgfri</td>
+        </tr>
+        <tr>
+          <th scope="row">Gyldighetstidspunkt</th>
+          <td>Når denne Folkeregisterpersonstatusen er gyldig fra og med</td>
+          <td>Valgfri. Migrert kan ha `null` (uspesifisert), nye vil ha tidspunkt</td>
+        </tr>
+        <tr>
+          <th scope="row">Opphoerstidspunkt</th>
+          <td>Vil aldri forekomme på Folkeregisterpersonstatus</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">Kilde</th>
+          <td>Opphavet til endringen i Folkeregisteret. Kan f.eks være NAV, UDI, Politiet, Skatteetaten.</td>
+          <td>God</td>
+        </tr>
+        <tr>
+          <th scope="row">Aarsak</th>
+          <td>Beskrivelse fra Folkeregisteret, noe variabelt hva som står her og hvor nyttig det kan være</td>
+          <td>Variabelt</td>
+        </tr>
+    </tbody>
+</table>
+
+
+#### Filtrering fra Folkeregisteret (I mottak inn i NAV)
 Når vi får personstatus fra Folkeregisteret, så skjer det ved svært skjeldne tilfeller (hittil 12) at de saksbehandler et opphør, for så å rette dette opp samme dag uten å slette opphørsstatusen.
 Dvs at personen ender opp med f.eks: 
 ```

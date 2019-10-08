@@ -26,8 +26,21 @@ Folkeregisterets kilder vil kunne være: tingretten, og pårørende ved endringe
 
 #### Historikk
 
-Eksponert via PDL-Api. Dersom behovet er å kun vise den gjeldende, er regelen for å finne den som følgende:
-Sorter på `gyldigFraOgMed`, plukk den siste (altså høyeste dato), så sjekk om denne har en `gyldigTilOgMed` (Opphørstidspunkt).
+PDL-Api eksponerer historikk dersom det er ønsket. Dette kan styres via et flagg i spørringen.
+Regelen for utledelse av gjeldende verdi er slik:
+Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato), så sjekk om denne har en `folkeregisterMetadata.opphoerstidspunkt` som er etter nå-tidspunktet.
+
+Visuelt eksempel:
+```
+|----->
+             |-----| (opphørt)
+      |----->
+
+Sortert:
+|---->|----->|-----|
+```
+
+Her er da den siste opphørt og ingen er dermed gjeldende. Dersom flagget `historikk: false` er sendt inn i grensesnittet, så vil denne regelen bli kjørt og ingen resultat kommer tilbake.
 
 #### Datakvalitet
 **Utenlandske adresser**
@@ -97,24 +110,17 @@ Note: Man må ha en av: Person som kontakt, advokat som kontakt eller organisasj
       <td>God</td>
     </tr>
     <tr>
-      <th scope="row">GyldigFraOgMed</th>
-      <td>Tidspunktet opplysningen gjelder ifra. Denne er hentet fra Folkeregisteret sitt gyldighetstidspunkt.</td>
-      <td>2019-11-23T12:34:59</td>
+      <th scope="row">FolkeregisterMetadata</th>
+      <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
+      <td>n/a</td>
       <td>Obligatorisk</td>
-      <td>God</td>
-    </tr>
-    <tr>
-      <th scope="row">GyldigTilOgMed</th>
-      <td>Tidspunktet opplysningen gjelder til. Denne er hentet fra Folkeregisteret sitt opphoerstidspunkt.</td>
-      <td>2019-11-30T14:24:39</td>
-      <td>Valgfri</td>
       <td>God</td>
     </tr>
     <tr>
       <th scope="row">Metadata</th>
       <td>Se felles definisjon</td>
       <td>n/a</td>
-      <td>Valgfri</td>
+      <td>Obligatorisk</td>
       <td>God</td>
     </tr>
   </tbody>
@@ -296,4 +302,46 @@ Adresselinjene inneholder fritekst fordelt på maksimum to linjer.
       <td>God</td>
     </tr>
   </tbody>
+</table>
+
+##### FolkeregisterMetadata
+
+Inneholder metadata som vi har fått fra Folkeregisteret.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Kompletthet</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+        <tr>
+          <th scope="row">Ajourholdstidspunkt</th>
+          <td>Tidspunktet opplysningen ble opprettet i Folkeregisteret</td>
+          <td>Obligatorisk</td>
+        </tr>
+        <tr>
+          <th scope="row">Gyldighetstidspunkt</th>
+          <td>Når denne Kontaktinformasjon for dødsbo er gyldig fra og med</td>
+          <td>Obligatorisk</td>
+        </tr>
+        <tr>
+          <th scope="row">Opphoerstidspunkt</th>
+          <td>Opphørstidspunktet for opplysningen, se kapittel om Historikk for mer informasjon</td>
+          <td>Valgfri</td>
+        </tr>
+        <tr>
+          <th scope="row">Kilde</th>
+          <td>Opphavet til endringen i Folkeregisteret.</td>
+          <td>God</td>
+        </tr>
+        <tr>
+          <th scope="row">Aarsak</th>
+          <td>Beskrivelse fra Folkeregisteret, noe variabelt hva som står her og hvor nyttig det kan være</td>
+          <td>Variabelt</td>
+        </tr>
+    </tbody>
 </table>

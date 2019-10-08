@@ -22,9 +22,21 @@ Folkeregisteret er eneste kilde og master til opplysningen for NAV.
   
 #### Historikk
 
-Vi får historikk fra Folkeregisteret og dette blir IKKE eksponert på grensesnittet i første omgang.
-Det legges opp til at dette kan legges på ved senere anledning dersom behovet oppstår. 
-Dersom dette blir innført senere, så settes en default på at konsumenter kun skal få ut gjeldende opplysninger (dvs ikke historikk) slik at det ikke feiler for eksisterende konsumenter.
+PDL-Api eksponerer historikk dersom det er ønsket. Dette kan styres via et flagg i spørringen.
+Regelen for utledelse av gjeldende verdi er slik:
+Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato), så sjekk om denne har en `folkeregisterMetadata.opphoerstidspunkt` som er etter nå-tidspunktet.
+
+Visuelt eksempel:
+```
+|----->
+             |-----| (opphørt)
+      |----->
+
+Sortert:
+|---->|----->|-----|
+```
+
+Her er da den siste opphørt og ingen er dermed gjeldende. Dersom flagget `historikk: false` er sendt inn i grensesnittet, så vil denne regelen bli kjørt og ingen resultat kommer tilbake.
 
 #### Informasjonselementer
 
@@ -55,11 +67,60 @@ Dersom dette blir innført senere, så settes en default på at konsumenter kun 
             <td>obligatorisk</td>
         </tr>
         <tr>
+          <th scope="row">FolkeregisterMetadata</th>
+          <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
+          <td>n/a</td>
+          <td>Obligatorisk</td>
+          <td>God</td>
+        </tr>
+        <tr>
           <th scope="row">Metadata</th>
           <td>Se felles definisjon</td>
           <td>n/a</td>
           <td>Valgfri</td>
           <td>God</td>
+        </tr>
+    </tbody>
+</table>
+
+##### FolkeregisterMetadata
+
+Inneholder metadata som vi har fått fra Folkeregisteret.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Informasjonselement</th>
+      <th>Beskrivelse</th>
+      <th>Kompletthet</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+        <tr>
+          <th scope="row">Ajourholdstidspunkt</th>
+          <td>Tidspunktet opplysningen ble opprettet i Folkeregisteret</td>
+          <td>Obligatorisk</td>
+        </tr>
+        <tr>
+          <th scope="row">Gyldighetstidspunkt</th>
+          <td>Når denne Adressebeskyttelsen er gyldig fra og med</td>
+          <td>Obligatorisk</td>
+        </tr>
+        <tr>
+          <th scope="row">Opphoerstidspunkt</th>
+          <td>Opphørstidspunktet for opplysningen, se kapittel om Historikk for mer informasjon</td>
+          <td>Valgfri</td>
+        </tr>
+        <tr>
+          <th scope="row">Kilde</th>
+          <td>Opphavet til endringen i Folkeregisteret.</td>
+          <td>God</td>
+        </tr>
+        <tr>
+          <th scope="row">Aarsak</th>
+          <td>Beskrivelse fra Folkeregisteret, noe variabelt hva som står her og hvor nyttig det kan være</td>
+          <td>Variabelt</td>
         </tr>
     </tbody>
 </table>

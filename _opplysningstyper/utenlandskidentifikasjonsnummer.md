@@ -1,5 +1,5 @@
 ---
-navn: Utenlandsk ID
+navn: Utenlandsk Identifikasjonsnummer
 hendelser: ja
 oppslag: ja
 sok: ja
@@ -29,8 +29,12 @@ Dersom FREG er master er kilden til FREG kilden (f.eks. skatteetaten, UDI).
 
 #### Historikk
 
-Ja
+PDL-Api eksponerer historikk dersom det er ønsket. Dette kan styres via et flagg i spørringen.
+Regelen for utledelse av gjeldende verdi er slik:
+Er feltet `opphoert: true` så er det en historisk opplysning.
 
+
+#### Informasjonselementer
 <table class="table">
     <thead>
         <tr>
@@ -57,18 +61,18 @@ Ja
             <td>God dersom PDL er master, varierende når FREG er master</td>
         </tr>
         <tr>
-            <th scope="row">Kilde</th>
-            <td>Utenlandsk institusjon/myndighet som er kilden til opplysningen</td>
-            <td>Deutsche Rentenversicherung Knappschaft</td>
-            <td>Obligatorisk</td>
-            <td></td>
-        </tr>
-        <tr>
             <th scope="row">Opphørt</th>
             <td>Informasjon om at en Utenlandsk ID ikke lengre er gyldig i utstederlandet</td>
             <td>Ja/nei</td>
             <td>Obligatorisk</td>
             <td>Det er sjelden at vi får informasjon om at en Utenlandsk ID ikke lengre er i bruk fra utstederlandet.</td>
+        </tr>
+        <tr>
+          <th scope="row">Metadata</th>
+          <td>Se felles definisjon</td>
+          <td>n/a</td>
+          <td>Obligatorisk</td>
+          <td>God</td>
         </tr>
     </tbody>
 </table>
