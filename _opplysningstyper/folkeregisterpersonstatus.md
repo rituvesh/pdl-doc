@@ -178,6 +178,13 @@ Dersom man spesifiserer `historikk: false` i grensesnittet, vil kun nr 3 blir re
       <td>God på nye, ingen historikk</td>
     </tr>
     <tr>
+      <th scope="row">ForenkletStatus</th>
+      <td>Forenklet folkeregisterpersonstatus ettersom flere av statusene etter gjennomgang med fagsidene ikke gir stor mening i NAV. Vi tilbyr begge, men forenklet status er mer knyttet mot fellesbehovene i NAV.</td>
+      <td>Se mappingtabell lengre ned</td>
+      <td>Obligatorisk</td>
+      <td>God.</td>
+    </tr>
+    <tr>
       <th scope="row">FolkeregisterMetadata</th>
       <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
       <td>n/a</td>
@@ -235,6 +242,19 @@ Inneholder metadata som vi har fått fra Folkeregisteret.
         </tr>
     </tbody>
 </table>
+
+##### Mapping mellom Status og Forenklet status
+
+| Status                                     | Forenklet                      |
+|--------------------------------------------|--------------------------------|
+| bosatt                                     | bosattEtterFolkeregisterloven  |
+| utflyttet                                  | ikkeBosatt                     |
+| forsvunnet                                 | forsvunnet                     |
+| doed                                       | doedIFolkeregisteret           |
+| opphoert                                   | opphoert                       |
+| foedselsregistrert                         | ikkeBosatt                     |
+| midlertidig                                | dNummer                        |
+| inaktiv                                    | dNummer                        |
 
 
 #### Filtrering fra Folkeregisteret (I mottak inn i NAV)
