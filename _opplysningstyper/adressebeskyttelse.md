@@ -24,7 +24,7 @@ Folkeregisteret er eneste kilde og master til opplysningen for NAV.
 
 PDL-Api eksponerer historikk dersom det er ønsket. Dette kan styres via et flagg i spørringen.
 Regelen for utledelse av gjeldende verdi er slik:
-Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato), så sjekk om denne har en `folkeregisterMetadata.opphoerstidspunkt` som er etter nå-tidspunktet.
+Sorter på `folkeregistermetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato), så sjekk om denne har en `folkeregistermetadata.opphoerstidspunkt` som er etter nå-tidspunktet.
 
 Visuelt eksempel:
 ```
@@ -67,7 +67,7 @@ Her er da den siste opphørt og ingen er dermed gjeldende. Dersom flagget `histo
             <td>obligatorisk</td>
         </tr>
         <tr>
-          <th scope="row">FolkeregisterMetadata</th>
+          <th scope="row">Folkeregistermetadata</th>
           <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
           <td>n/a</td>
           <td>Obligatorisk</td>
@@ -83,7 +83,7 @@ Her er da den siste opphørt og ingen er dermed gjeldende. Dersom flagget `histo
     </tbody>
 </table>
 
-##### FolkeregisterMetadata
+##### Folkeregistermetadata
 
 Inneholder metadata som vi har fått fra Folkeregisteret.
 

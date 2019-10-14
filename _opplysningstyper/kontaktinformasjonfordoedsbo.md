@@ -28,7 +28,7 @@ Folkeregisterets kilder vil kunne være: tingretten, og pårørende ved endringe
 
 PDL-Api eksponerer historikk dersom det er ønsket. Dette kan styres via et flagg i spørringen.
 Regelen for utledelse av gjeldende verdi er slik:
-Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato), så sjekk om denne har en `folkeregisterMetadata.opphoerstidspunkt` som er etter nå-tidspunktet.
+Sorter på `folkeregistermetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato), så sjekk om denne har en `folkeregistermetadata.opphoerstidspunkt` som er etter nå-tidspunktet.
 
 Visuelt eksempel:
 ```
@@ -110,7 +110,7 @@ Note: Man må ha en av: Person som kontakt, advokat som kontakt eller organisasj
       <td>God</td>
     </tr>
     <tr>
-      <th scope="row">FolkeregisterMetadata</th>
+      <th scope="row">Folkeregistermetadata</th>
       <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
       <td>n/a</td>
       <td>Obligatorisk</td>
@@ -304,7 +304,7 @@ Adresselinjene inneholder fritekst fordelt på maksimum to linjer.
   </tbody>
 </table>
 
-##### FolkeregisterMetadata
+##### Folkeregistermetadata
 
 Inneholder metadata som vi har fått fra Folkeregisteret.
 

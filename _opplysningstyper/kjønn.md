@@ -28,7 +28,7 @@ Ja. Vi får historikk fra Folkeregisteret, men kun fra migreringspunktet og frem
 
 PDL-Api eksponerer den historikken vi har dersom det er ønsket. Dette kan styres via et flagg i spørringen.
 Regelen for utledelse av gjeldende verdi er slik:
-Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato) (null first). Det vil ikke forekomme noe opphørstidspunkt på denne opplysningen ettersom man vil alltids ha ett kjønn.
+Sorter på `folkeregistermetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato) (null first). Det vil ikke forekomme noe opphørstidspunkt på denne opplysningen ettersom man vil alltids ha ett kjønn.
 
 OBS OBS: Folkeregisteret har ofte satt `null` (uspesifisert) start-tidspunkt på de opplysningene de har migrert inn ettersom de ikke vet hva gyldighetstidspunktet er. 
 
@@ -52,7 +52,7 @@ OBS OBS: Folkeregisteret har ofte satt `null` (uspesifisert) start-tidspunkt på
         <td>God</td>
     </tr>
     <tr>
-      <th scope="row">FolkeregisterMetadata</th>
+      <th scope="row">Folkeregistermetadata</th>
       <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
       <td>n/a</td>
       <td>Obligatorisk</td>
@@ -68,7 +68,7 @@ OBS OBS: Folkeregisteret har ofte satt `null` (uspesifisert) start-tidspunkt på
   </tbody>
 </table>
 
-##### FolkeregisterMetadata
+##### Folkeregistermetadata
 
 Inneholder metadata som vi har fått fra Folkeregisteret.
 

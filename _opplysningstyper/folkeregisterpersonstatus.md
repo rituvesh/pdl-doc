@@ -137,7 +137,7 @@ Historikk vil komme på nyopprettede personstatuser.
 
 PDL-Api eksponerer den historikken vi har dersom det er ønsket. Dette kan styres via et flagg i spørringen.
 Regelen for utledelse av gjeldende verdi er slik:
-Sorter på `folkeregisterMetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato) (null first). Det vil ikke forekomme noe opphørstidspunkt på denne opplysningen ettersom opphør er en egen personstatus.
+Sorter på `folkeregistermetadata.gyldighetstidspunkt`, plukk den siste (altså høyeste dato) (null first). Det vil ikke forekomme noe opphørstidspunkt på denne opplysningen ettersom opphør er en egen personstatus.
 Det er alltids en annen som overtar for den forrige personstatusen.
 
 OBS OBS: Folkeregisteret har ofte satt `null` (uspesifisert) start-tidspunkt på de opplysningene de har migrert inn ettersom de ikke vet hva gyldighetstidspunktet er. 
@@ -151,9 +151,9 @@ Visuelt eksempel:
 Sortert:
 ---1--->|---2--->|---3--->
 ```
-1. `folkeregisterMetadata.gyldighetstidspunkt = null`
-2. `folkeregisterMetadata.gyldighetstidspunkt = 2019-01-23`
-3. `folkeregisterMetadata.gyldighetstidspunkt = 2019-11-30`
+1. `folkeregistermetadata.gyldighetstidspunkt = null`
+2. `folkeregistermetadata.gyldighetstidspunkt = 2019-01-23`
+3. `folkeregistermetadata.gyldighetstidspunkt = 2019-11-30`
 
 Dersom man spesifiserer `historikk: false` i grensesnittet, vil kun nr 3 blir returnert.
 
@@ -185,7 +185,7 @@ Dersom man spesifiserer `historikk: false` i grensesnittet, vil kun nr 3 blir re
       <td>God.</td>
     </tr>
     <tr>
-      <th scope="row">FolkeregisterMetadata</th>
+      <th scope="row">Folkeregistermetadata</th>
       <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
       <td>n/a</td>
       <td>Obligatorisk</td>
@@ -201,7 +201,7 @@ Dersom man spesifiserer `historikk: false` i grensesnittet, vil kun nr 3 blir re
     </tbody>
 </table>
 
-##### FolkeregisterMetadata
+##### Folkeregistermetadata
 
 Inneholder metadata som vi har fått fra Folkeregisteret.
 

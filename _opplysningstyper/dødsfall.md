@@ -12,14 +12,18 @@ tilgjengelig-fra: februar 2020
 
 Opplysninger knyttet mot dødsfall.
 
+#### Spesiell informasjon
+
+*Obs obs! Vi vil etterhvert utvide med Dødsfall fra NAV*
+Det vil si at man potensielt få tilbake 2 Dødsfall i oppslaget. Dersom dere kun vil ha Folkeregisteret sitt, så må dere filtrere på `metadata.master: "FREG"`.
 
 #### Master og kilder
 
-FREG er master  
+Folkeregisteret er master  
 PDL er master for personkrets D.nr. og utvandret som FREG ikke godtar. (Under analyse).  
 Dersom behovet er å benytte Folkeregisteret sine opplysninger om død må dere filtrere på master = FREG.
 
-Mulige kilder FREG: tingretten, legen, norsk utenriksstasjon  
+Mulige kilder Folkeregisteret: tingretten, legen, norsk utenriksstasjon  
 Mulige kilder PDL: E500, utenlandske trygdemyndigheter
 
 #### Informasjonselementer
