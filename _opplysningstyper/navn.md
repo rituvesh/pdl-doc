@@ -97,7 +97,7 @@ Dersom dere ønsker det samme, så kan man sette: `historikk: false`, så får m
       <th scope="row">Folkeregistermetadata</th>
       <td>Inneholder all metadata vi har fått fra Folkeregisteret.</td>
       <td>n/a</td>
-      <td>Obligatorisk</td>
+      <td>Valgfri - Avhengig av om navnet kommer fra Folkeregisteret</td>
       <td>God</td>
     </tr>
     <tr>
@@ -127,8 +127,8 @@ Inneholder metadata som vi har fått fra Folkeregisteret.
   <tbody>
     <tr>
       <th scope="row">Ajourholdstidspunkt</th>
-      <td>Tidspunktet opplysningen ble opprettet i Folkeregisteret</td>
-      <td>Obligatorisk</td>
+      <td>Tidspunktet opplysningen ble opprettet i Folkeregisteret, ofte ukjent på migrert data fra DSF</td>
+      <td>Valgfri</td>
     </tr>
     <tr>
       <th scope="row">Gyldighetstidspunkt</th>
