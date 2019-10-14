@@ -2,25 +2,13 @@
 layout: page-with-submenu
 submenu: tema.html
 ---
+<section id="integrasjon" class="container">
 
-# Generelt
-
-# PDL / TPS
-
-# Tilgangskontroll
-
-## Formål og hjemler
-
-# Tjenester
-
-## Oppslag
-
-## Søk
-
-## Mottak av opplysninger
-
-## Livshendelser
-
-## Persondokument
-
-## Person-Forvalter / Endre Person
+    {% for integrasjon in site.integrasjon %}
+    <div class="row">
+        <div class="col-md-12">
+            {{ integrasjon.content }}
+        </div>
+    </div>
+    {% endfor %}
+</section>
