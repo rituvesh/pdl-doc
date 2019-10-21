@@ -4,7 +4,8 @@
 
 #### Generelt
 
-Persondataløsningen er et register som består av en god del forskjellige tjenester som til sammen skal dekke behovene NAV har for grunnleggende personopplysninger.
+Persondataløsningen er et register som består av flere forskjellige tjenester som til sammen skal dekke behovene NAV har for grunnleggende personopplysninger.
+
 Per i dag står TPS ansvarlig for denne rollen og blir oppdatert daglig via nattlig ajourholdsfil fra DSF (Det Sentrale Folkeregisteret). 
 Ettersom Folkeregisteret nå moderniseres, så ble MFN (Modernisering av Folkeregisteret i NAV) opprettet som NAV sitt svar på MF (Modernisert Folkeregister). PDL er produktet som MFN lager.
 
