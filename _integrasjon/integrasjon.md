@@ -4,23 +4,16 @@
 
 #### Generelt
 
-Persondataløsningen er et register som består av flere forskjellige tjenester som til sammen skal dekke behovene NAV har for grunnleggende personopplysninger.
+Persondataløsningen (PDL) er et register med forskjellige tjenester som til sammen skal dekke NAVs behov for grunnleggende personopplysninger. Løsningen leveres av MFN-prosjektet, og skal erstatte dagens TPS-løsning.
 
-Per i dag står TPS ansvarlig for denne rollen og blir oppdatert daglig via nattlig ajourholdsfil fra DSF (Det Sentrale Folkeregisteret). 
-Ettersom Folkeregisteret nå moderniseres, så ble MFN (Modernisering av Folkeregisteret i NAV) opprettet som NAV sitt svar på MF (Modernisert Folkeregister). PDL er produktet som MFN lager.
+PDL vil løpende ta i mot personopplysninger fra flere kilder (i sanntid), deriblant nytt folkeregister hos Skatteetaten - Freg. Dette blir en forbedring sammenlignet med TPS, som blir oppdatert daglig via nattlig ajourholdsfil fra DSF (Det Sentrale Folkeregisteret). PDL vil i tillegg ivareta NAVs ansvar for oppdatere Folkeregisteret.
 
-Med dette som bakgrunn har prosjektet fått ansvaret for å utvikle og innføre en ny Persondataløsning. 
-Den skal dekke grunnleggende personopplysninger og vil løpende ta i mot personopplysninger fra flere aktører som blant annet trygdeinstitusjoner i EØS, UDI og bruker selv. 
-NAV vil i tillegg bidra til økt datakvalitet i Folkeregisteret gjennom å oppdatere Folkeregisteret med de endringer som oppdages i vår dialog med bruker.
-
-Ny Persondataløsning skal på erstatte TPS slik at alle etatens systemer i en periode fremover vil måtte tilpasses ny Persondataløsning. Dette arbeidet vil i hovedsak skje i 2020 og 2021. 
-Ny Persondataløsning vil ha flere personopplysninger, være oppdatert i sanntid og ha vesentlig økt datakvalitet. 
-Dette vil uten tvil bidra til bedre dialog med bruker. Prosjektet har en foreløpig tidshorisont ut 2021.
+PDL vil i en periode eksistere i paralell med TPS. Det vil gjennomføres et eget migreringsløp for å få alle NAVs systemer over fra TPS til PDL. Dette arbeidet vil i hovedsak skje i 2020 og 2021. 
 
 #### Konseptet Master. Paralell sannhet
-PDL innfører begrepet Master. Master vil stå på hver opplysningstype under `metadata`. Dette er for å signalisere hvor opplysningen kommer ifra og hvor man eventuelt må gå for å få den endret.
-I motsetning til i TPS, så vil PDL aldri tilby overskriving av opplysninger fra Folkeregisteret direkte. Man kan legge til en ny PDL sannhet, men ikke si at det Folkeregisteret sier er feil.
-Dersom man ønsker å få oppdatert noe som ligger i en annen master enn PDL, så må dette gå igjennom den masteren sin rutine for oppdatering av opplysninger.
+PDL innfører begrepet Master. Alle opplysningstyper vil registreres med en master under `metadata`. Masteren angir hvor opplysningen kommer ifra og hvor man eventuelt må gå for å få den endret.
+
+I motsetning til i TPS, vil PDL aldri tilby overskriving av opplysninger fra andre mastre direkte, f.eks. Folkeregisteret. NAV kan legge til egne opplysninger, men disse vil da registres med PDL som master. Dersom man ønsker å få oppdatert opplysninger som ligger i en annen master enn PDL, må dette gå igjennom den masteren sin rutine for oppdatering av opplysninger.
 
 Det er noen opplysninger Folkeregisteret gjerne vil ha fra NAV, dette inkluderer blant annet Dødsfall. Dette vil PDL sende over til Folkeregisteret og dette kan da komme tilbake som et dødsfall fra Folkeregisteret.
 Men i dette tilfellet, så vil vi også registrere et Dødsfall i NAV ettersom vi ikke har noen garanti for at Folkeregisteret tar hensyn til informasjonen vi gir dem. Dersom de tar det inn, vil hendelsesforløpet være noe ala:
