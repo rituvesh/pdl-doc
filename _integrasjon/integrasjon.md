@@ -10,17 +10,10 @@ PDL vil løpende ta i mot personopplysninger fra flere kilder (i sanntid), derib
 
 PDL vil i en periode eksistere i paralell med TPS. Det vil gjennomføres et eget migreringsløp for å få alle NAVs systemer over fra TPS til PDL. Dette arbeidet vil i hovedsak skje i 2020 og 2021. 
 
-#### Konseptet Master. Paralell sannhet
-PDL innfører begrepet Master. Alle opplysningstyper vil registreres med en master under `metadata`. Masteren angir hvor opplysningen kommer ifra og hvor man eventuelt må gå for å få den endret.
+#### Konseptet Master. 
+PDL innfører begrepet Master. Alle opplysningstyper i PDL vil registreres med en master under `metadata`. Masteren angir hvor opplysningen kommer ifra og hvor man eventuelt må gå for å få den endret.
 
 I motsetning til i TPS, vil PDL aldri tilby overskriving av opplysninger fra andre mastre direkte, f.eks. Folkeregisteret. NAV kan legge til egne opplysninger, men disse vil da registres med PDL som master. Dersom man ønsker å få oppdatert opplysninger som ligger i en annen master enn PDL, må dette gå igjennom den masteren sin rutine for oppdatering av opplysninger.
-
-Det er noen opplysninger Folkeregisteret gjerne vil ha fra NAV, dette inkluderer blant annet Dødsfall. Dette vil PDL sende over til Folkeregisteret og dette kan da komme tilbake som et dødsfall fra Folkeregisteret.
-Men i dette tilfellet, så vil vi også registrere et Dødsfall i NAV ettersom vi ikke har noen garanti for at Folkeregisteret tar hensyn til informasjonen vi gir dem. Dersom de tar det inn, vil hendelsesforløpet være noe ala:
-2019-01-20: Registrert død i NAV
-2019-02-04: Registrert død i Folkeregisteret basert på informasjon fra NAV
-Her ender vi opp med at vi har 2 dødsfall i PDL, ett som kom 2019-01-20 der hvor PDL er master og ett fra 2019-02-04 fra Folkeregisteret. Begge kan ha samme dødsdato.
-Dette kaller vi i PDL Paralell sannhet og er i hovedsak noe vi prøver å unngå, men det vil forekomme.
 
 #### PDL / TPS
 
@@ -36,9 +29,11 @@ Det vil også si at vi som løsning ikke kan fikse på dataen dersom vi får då
 PDL må dermed analysere og dokumentere eventuelle avvik/kvalitetsbrister som følger med en opplysningstype (f.eks har man alltids gyldighetstidspunkt på navn? hvis ikke, hvordan kan det brukes?).
 
 ##### Flere kilder, flere verdier. Paralelle sannheter
-TPS har i en årrekke stått for å lage en konsolidert sannhet om hvordan en bruker skal representeres. Denne konsoliderte sannheten blir lagd på bakgrunn av et stort sett med forretningsregler som har blitt formet over tid.
-Eksempel: Får navnet Ola fra Folkeregisteret. NAV mener at personen heter Hans men Folkeregisteret vil ikke endre. For å få utbetalinger til å gå igjennom, har man endret navnet fra Ola til Hans. Nå heter personen Ola i Folkeregisteret, Hans i NAV.
-Dette gjør ikke PDL, vi vil presentere begge disse sannhetene til konsumentene og dere må selv stå ansvarlig for hvilke verdier dere har lyst til å benytte. Reglene for TPS vil være dokumentert under opplysningstypen. Regelen i eksemplet over er at TPS velger det siste navnet (basert på registreringstidspunkt).
+TPS har i en årrekke tatt ansvar for å lage en konsolidert sannhet om hvordan en bruker skal representeres. Denne konsoliderte sannheten blir lagd på bakgrunn av et stort sett med forretningsregler som har blitt formet over tid.
+
+Eksempel: En person heter Ola i Folkeregisteret. NAV mener at personen heter Hans men Folkeregisteret vil ikke endre. For å få utbetalinger til å gå igjennom, har man endret navnet fra Ola til Hans i TPS. Nå heter personen Ola i Folkeregisteret, Hans i TPS.
+
+PDL vil ikke videreføre denne praksisen. Fremfor å konsolidere navnene presenteres begge "sannhetene" til konsumentene. Konsumentene må ut fra sin egen kontekst og sine egne forretningsregler stå ansvarlig for å velge hvilke verdierr som skal benyttes. 
 
 Visualisert:
 ```
@@ -49,7 +44,26 @@ Folkeregisteret:
 NAV:
                           |---- Hans Nordmann ----->
 ```
-For videre utredelse, les om `Konseptet Master` lengre opp.
+
+Reglene i TPS vil være dokumentert under opplysningstypene. I eksemplet over vil TPS velge det siste navnet (basert på registreringstidspunkt).
+
+les også om `Konseptet Master` lengre opp.
+
+Enkelte personopplysninger vil Folkeregisteret (Freg) gjerne ha fra NAV, f.eks. Dødsfall. PDL vil da sende opplysninger om dødsfall til Freg. Opplysningene vil i tillegg lagres i PDL (med master NAV) ettersom vi ikke har noen garanti for at Freg tar hensyn til informasjonen vi gir dem. Avhengig av om Freg tar imot opplysningene eller ikke kan opplysningene om dødsfall komme tilbake på offentlig hendelsesliste fra Freg.
+
+Eksempel på hendelsesforløp:
+2019-01-20: Registrert død i NAV
+2019-02-04: Registrert død i Folkeregisteret basert på informasjon fra NAV
+
+Her ender vi opp med at vi har to registrerte dødsfall i PDL, ett som kom 2019-01-20 der hvor PDL er master og ett fra 2019-02-04 fra Freg. Begge kan ha samme dødsdato.
+
+Følgende scenario kan resultere i paralelle sannheter:
+<ul>
+  <li>NAV trenger tilleggsinformasjon som Freg ikke tar inn </li>
+  <li>NAV får ikke endret i Freg</li>
+  <li>Det forventes at det tar lang tid før Freg endres (manuell saksbehandling) og dette har betydelige konsekvenser for saksbehandlingen i NAV</li>
+  <li>Freg gjør endringer på data NAV sender inn.</li>
+</ul>
 
 ##### Distribusjonsmeldinger
 TPS tilbyr distribusjonsmeldinger via MQ. Dette tilbyr også PDL men via Apache Kafka.
